@@ -4,7 +4,7 @@ var first_featured = false;
 var feature_count = 2;
 var selected_datapack = "";
 $(document).ready(function () {
-    $.getJSON("datapack/registry.json", function (datapack_list) {
+    $.getJSON("registry.json", function (datapack_list) {
         for (i = 0; i < datapack_list.length; i++) {
             var datapack_name = datapack_list[i];
             $.getJSON("../../meta/" + datapack_name + ".json", function (data) {
