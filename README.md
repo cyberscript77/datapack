@@ -1,8 +1,6 @@
 # CyberScript Datapacks
 &nbsp;
-![Logo](/assets/images/cs_logo.png)
-
-&nbsp;
+![Logo](/assets/images/logo.png)
 
 This repository contains all the datapacks available for CyberScript made using CyberScript Engine.
 
