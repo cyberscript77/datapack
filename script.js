@@ -1,10 +1,9 @@
 var folder = "https://api.github.com/repos/cyberscript77/datapack/contents/datapacks"
-var raw_url = "https://raw.githubusercontent.com/cyberscript77/datapack/main/datapacks/";
+var raw_url = "https://cyberscript77.github.io/datapack/datapacks";
 var first_featured = false;
 var feature_count = 2;
 var selected_datapack = "";
 $(document).ready(function () {
-
     $.getJSON(folder, async function (folders_list) {
         for (i = 0; i < folders_list.length; i++) {
             var folder_name = folders_list[i].name;
@@ -27,6 +26,10 @@ $(document).ready(function () {
     });
 
     document.getElementById("download-datapack").addEventListener('click', () => {
+                // Testing
+                $.getJSON("./datapacks/av-of-night-city/desc.json", function (D) {
+                    console.log(D);
+                });
         GitZip.zipRepo(selected_datapack);
     });
 });
