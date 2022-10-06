@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+:root {
+    color-scheme: dark;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    font: 500 100%/1.4 system-ui;
+    background-color: black;
+    font-family: "Orbitron";
+}
+
+.header {
+    margin: -10px;
+    width: 101%;
+    position: fixed;
+    background: yellow;
+    color: black;
+    z-index: 1;
+}
+
+.header h2 {
+    text-align: center;
+}
+
+.header-after {
+    border: none;
+    margin-top: -15px;
+}
+
+.container {
+    color: rgb(255, 255, 255);
+    margin: -10px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    position: absolute;
+    margin-top: 100px;
+}
+
+.card {
+    border: solid white;
+    border-width: 1.5px;
+    width: 400px;
+    overflow: hidden;
+    height: 330px;
+    margin: 15px;
+    padding: 20px 0;
+    padding-top: 0;
+    transition: all 0.5s;
+    cursor: pointer;
+    color: white;
+    transform: translateZ(0px);
+}
+
+.featured {
+    margin-left: -160px;
+    margin-top: 81px;
+}
+
+.next {
+    margin-left: 15px;
+}
+
+.other-datapacks {
+    margin-top: 20px;
+    margin-left: 15px;
+    font-size: 30px;
+    width: 100%;
+}
+
+.featured-text {
+    margin-top: 10px;
+    font-size: 30px;
+    position: relative;
+    margin-left: 20px;
+}
+
+.card img {
+    max-height: 180px;
+    width: 100%;
+    transform: scale(1.1);
+    transition: transform 0.5s;
+    z-index: 1;
+    position: relative;
+    object-fit: cover;
+}
+
+.card h2 {
+    background-color: transparent;
+    padding: 10px;
+    padding-top: 25px;
+    margin: 0;
+    z-index: 2;
+    position: relative;
+}
+
+.card p {
+    padding: 0 10px;
+    margin: 0;
+}
+
+.card:hover {
+    background-color: #fafafa;
+    color: black;
+    transform: translateY(-5px) translateZ(0px);
+}
+
+.card:hover img {
+    transform: scale(1.2) translateZ(0px);
+}
+
+.large {
+    text-align: center;
+    color: black;
+    border: 0px;
+    background: linear-gradient(315deg, aqua 98%, transparent 5%);
+    width: 600px;
+    height: 400px;
+    transition: transform 1s;
+}
+
+.large:hover {
+    transition: transform 1s;
+    background: linear-gradient(315deg, #fafafa 98%, transparent 5%);
+}
+
+.featured-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.author {
+    display: inline;
+}
+
+.tag {
+    width: 70px;
+    text-align: center;
+    line-height: 40px;
+    color: black;
+    float: right;
+    display: inline;
+    background-color: #fafafa;
+}
+
+/* The Modal (background) */
+.modal {
+    backdrop-filter: blur(10px);
+    animation: fadein .5s;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: rgba(0, 0, 0, 0.808);
+    margin: auto;
+    padding: 20px;
+    border: 3px solid rgb(255, 255, 255);
+    width: 80%;
+    height: 60%;
+}
+
+/* The Close Button */
+.close {
+    color: #ffffff;
+    float: right;
+    margin-top: -15px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: rgb(204, 204, 204);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content .title {
+    font-size: 24px;
+    margin-top: -10px;
+}
+
+.modal-content img {
+    margin-top: -80px;
+    height: 90%;
+    width: 100%;
+}
+
+.modal-content .info {
+    margin-left: 20px;
+    height: 100%;
+    color: #ffffff;
+}
+
+.info .title-info {
+    margin-top: -45px;
+    font-size: 24px;
+}
+
+.change-log-scroll {
+    font-family: 'VT323', monospace;
+    margin-top: 10px;
+    color: rgb(186, 186, 186);
+    border: 0px;
+    background: linear-gradient(136deg, rgba(255, 255, 255, 0.101) 98%, transparent 5%);
+    width: 100%;
+    height: 200px;
+    transition: transform 1s;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.change-log-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.changelog-title {
+    margin-left: 10px;
+}
+
+.changelog-title-underline {
+    margin-top: -10px;
+    margin-left: 10px;
+    border: 0;
+    background-color: white;
+    height: 1px;
+}
+
+.changelog-body {
+    margin-left: 10px;
+}
+
+.download-section {
+    margin-top: 10px;
+}
+
+.download-button {
+    border-radius: 3px;
+    font-family: Orbitron;
+    border: 0px;
+    height: 40px;
+    font-size: 18px;
+    background-color: aqua;
+    color: black;
+    transition: all 0.3s;
+}
+
+.download-button:hover {
+    background-color: #ffffff;
+}

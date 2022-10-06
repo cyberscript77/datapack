@@ -1,0 +1,19 @@
+{
+    "name": "AV Of Night City",
+    "desc": "Get your own AV and drive around Night City in Style!",
+    "author": "donk7413",
+    "featured": true,
+    "changelog": [
+        {
+            "version": "1.0.0",
+            "desc": "Added Upper hand\nImproved driving mechanism\nIntroducing auto-pilot system"
+        }
+    ],
+    "file": "AV Of Night City.zip",
+    "tag": "AV Of Night City",
+    "version": "1.0.2",
+    "isdebug": false,
+	"branch":"beta",
+	"requirement": "1.1.2",
+	"flags":["cm_version:1.1.2"]
+}

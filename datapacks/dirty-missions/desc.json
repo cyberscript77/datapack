@@ -1,0 +1,10 @@
+{
+	"name": "Dirty Mission",
+	"desc": "An simple and basic kill mission example. Radiant.",
+	"author": "donk7413",
+	"featured": true,
+	"file": "dirtymission.zip",
+	"tag": "dirtymission",
+	"version": "1.3.0",
+	"flags": []
+}

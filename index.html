@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="header">
+        <h2>Datapacks</h2>
+        <img class="header-after" src="https://www.cyberpunk.net/build/images/next-gen/top-line-ea32d828.svg">
+    </div>
+    <div class="container">
+        <div class="card large">
+            <h2>Notice</h2><br>
+            <p>▧ Please follow the instructions correctly and throughly. We are not responsible for any damage done by
+                this datapack.
+                <br><br><br>▧ You can design your own datapack using ▪ CyberScript Engine and publish them at our
+                discord channel. If you have any doubt in installation
+                or designing datapacks, you can ask them in our discord channel and the best datapack will be featured
+                here.<br><br>Thank you!
+            </p>
+        </div>
+
+        <p class="featured-text">Featured</p>
+
+        <div class="featured-container"></div>
+
+        <div class="other-datapacks">Datapack [S]</div>
+
+        <!-- The Modal -->
+        <div id="datapackModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3 class="title" id="modal-title">Gang of Night City</h3>
+                <table style="width: 100%; height: 100%;">
+                    <td style="width: 60%;">
+                        <img id="view-img-src">
+                    </td>
+                    <td>
+                        <div class="info">
+                            <p class="title-info">▣ Info</p>
+                            <p id="info-name">Loading...</p>
+                            <p id="info-desc" style="width: 100%; color: rgb(171, 171, 171);">Loading..</p>
+                            Changelogs:<div id="info-changelog" class="change-log-scroll">
+                            </div>
+                            <div class="download-section">
+                                <button id="how-to-install-datapack" style="width: 55%;" class="download-button"><i class="fa-solid fa-book"></i> How to install ?</button>
+                                <button id="download-datapack" style="width: 41%;" class="download-button"><i class="fa-solid fa-download"></i> Download</button>
+                            </div>
+                        </div>
+                    </td>
+                </table>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+            integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+        <script src="./gitzip/FileSaver.min.js"></script>
+        <script src="./gitzip/jszip.min.js"></script>
+        <script src="./gitzip/API.js"></script>
+        <script src="script.js"></script>
+        <script src="https://kit.fontawesome.com/b517f84069.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
