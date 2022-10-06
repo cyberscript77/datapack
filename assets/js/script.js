@@ -7,11 +7,11 @@ $(document).ready(function () {
     $.getJSON("registry.json", function (datapack_list) {
         for (i = 0; i < datapack_list.length; i++) {
             var datapack_name = datapack_list[i];
-            $.getJSON("../../meta/" + datapack_name + ".json", function (data) {
+            $.getJSON("meta/" + datapack_name + ".json", function (data) {
                 if (data.featured && feature_count != 0) { feature_count--; }
                 else if (data.featured && feature_count == 0) { data.featured = false; }
                 document.getElementsByClassName(`${data.featured ? "featured-container" : "container"}`)[0].insertAdjacentHTML("beforeend",
-                    `<div class="card ${data.featured ? "featured" : ""} ${data.featured && first_featured ? "next" : ""}" onclick="openDatapack('${datapack_name}');"><img src="${"../../meta/" + datapack_name + ".jpg"}" />
+                    `<div class="card ${data.featured ? "featured" : ""} ${data.featured && first_featured ? "next" : ""}" onclick="openDatapack('${datapack_name}');"><img src="${"meta/" + datapack_name + ".jpg"}" />
                              <h2>${data.name}</h2>
                              <p>${data.desc}</p><br>
                              <p class="author">▣ Author: ${data.author}</p> ${data.branch == "beta" || data.branch == "alpha" ? `<div class="tag shimmer">${data.branch.capitalize()}</div>` : ""}
@@ -32,12 +32,12 @@ $(document).ready(function () {
 
 function openDatapack(datapack_name) {
     selected_datapack = datapack_name;
-    $.getJSON("../../meta/" + datapack_name + ".json", function (desc) {
+    $.getJSON("meta/" + datapack_name + ".json", function (desc) {
         // Set title
         document.getElementById("modal-title").innerHTML = desc.name;
         document.getElementById("info-name").innerHTML = desc.name;
         // Set image
-        document.getElementById("view-img-src").src = "../../meta/" + datapack_name + ".jpg";
+        document.getElementById("view-img-src").src = "meta/" + datapack_name + ".jpg";
         // Set description
         document.getElementById("info-desc").innerHTML = desc.desc;
         // Set changelog
