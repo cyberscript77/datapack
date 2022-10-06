@@ -4,14 +4,14 @@ var first_featured = false;
 var feature_count = 2;
 var selected_datapack = "";
 $(document).ready(function () {
-    $.getJSON(folder, async function (folders_list) {
-        for (i = 0; i < folders_list.length; i++) {
-            var folder_name = folders_list[i].name;
-            await $.getJSON(raw_url + "/" + folder_name + "/desc.json", function (data) {
+    $.getJSON("../../registry.json", function (datapack_list) {
+        for (i = 0; i < datapack_list.length; i++) {
+            var datapack_name = datapack_list[i];
+            $.getJSON("../../meta/" + datapack_name + ".json", function (data) {
                 if (data.featured && feature_count != 0) { feature_count--; }
                 else if (data.featured && feature_count == 0) { data.featured = false; }
                 document.getElementsByClassName(`${data.featured ? "featured-container" : "container"}`)[0].insertAdjacentHTML("beforeend",
-                    `<div class="card ${data.featured ? "featured" : ""} ${data.featured && first_featured ? "next" : ""}" onclick="openDatapack('${raw_url + "/" + folder_name}');"><img src="${raw_url + "/" + folder_name + "/thumbnail.jpg"}" />
+                    `<div class="card ${data.featured ? "featured" : ""} ${data.featured && first_featured ? "next" : ""}" onclick="openDatapack('${datapack_name}');"><img src="${"../../meta/" + datapack_name + ".jpg"}" />
                              <h2>${data.name}</h2>
                              <p>${data.desc}</p><br>
                              <p class="author">▣ Author: ${data.author}</p> ${data.branch == "beta" || data.branch == "alpha" ? `<div class="tag shimmer">${data.branch.capitalize()}</div>` : ""}
@@ -26,22 +26,18 @@ $(document).ready(function () {
     });
 
     document.getElementById("download-datapack").addEventListener('click', () => {
-                // Testing
-                $.getJSON("./datapacks/av-of-night-city/desc.json", function (D) {
-                    console.log(D);
-                });
-        GitZip.zipRepo(selected_datapack.replace("cyberscript77.github.io", "github.com/cyberscript77"));
+        alert("Download " + selected_datapack);
     });
 });
 
-function openDatapack(location) {
-    selected_datapack = location;
-    $.getJSON(location + "/desc.json", function (desc) {
+function openDatapack(datapack_name) {
+    selected_datapack = datapack_name;
+    $.getJSON("../../meta/" + datapack_name + ".json", function (desc) {
         // Set title
         document.getElementById("modal-title").innerHTML = desc.name;
         document.getElementById("info-name").innerHTML = desc.name;
         // Set image
-        document.getElementById("view-img-src").src = location + "/thumbnail.jpg";
+        document.getElementById("view-img-src").src = "../../meta/" + datapack_name + ".jpg";
         // Set description
         document.getElementById("info-desc").innerHTML = desc.desc;
         // Set changelog
