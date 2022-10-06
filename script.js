@@ -26,11 +26,11 @@ $(document).ready(function () {
     });
 
     document.getElementById("download-datapack").addEventListener('click', () => {
+                // Testing
+                $.getJSON("./datapacks/av-of-night-city/desc.json", function (D) {
+                    console.log(D);
+                });
         GitZip.zipRepo(selected_datapack);
-        // Testing
-        $.getJSON("./datapacks/av-of-night-city/desc.json", function (D) {
-            console.log(D);
-        });
     });
 });
 
