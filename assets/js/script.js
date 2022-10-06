@@ -27,7 +27,6 @@ $(document).ready(function () {
 
     document.getElementById("download-datapack").addEventListener('click', () => {
         window.open(`https://raw.githubusercontent.com/cyberscript77/datapack/main/datapacks/${selected_datapack}.zip`, "_blank")
-        alert("Download " + selected_datapack);
     });
 });
 
