@@ -1,6 +1,6 @@
 # CyberScript Datapacks
 &nbsp;
-![Logo](/assets/logo.png)
+![Logo](/assets/cs_logo.png)
 
 &nbsp;
 
