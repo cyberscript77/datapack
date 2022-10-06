@@ -9,7 +9,7 @@ This repository contains all the datapacks available for CyberScript made using 
 ⚠️ Please read the steps completely and thoroughly to prevent any wrong steps which may affect your game.
 ## Market Place 
 
-Visit our [Market Place](cyberscript77.github.io/datapack) to download these datapacks quickly.
+Visit our [Market Place](https://cyberscript77.github.io/datapack) to download these datapacks quickly.
 
 
 ## Manual Download
@@ -20,10 +20,10 @@ Visit our [Market Place](cyberscript77.github.io/datapack) to download these dat
     
 ## How to install
 
-Refer to the [📕wiki](cyberscript77.github.io/wiki) provided for cyberscript, which contains the steps involded in installing the datapacks.
+Refer to the [📕wiki](https://cyberscript77.github.io/wiki) provided for cyberscript, which contains the steps involded in installing the datapacks.
 ## Create your own
 
-To create your own datapacks, follow the steps listed in this [guide](cyberscript77.github.io/wiki).
+To create your own datapacks, follow the steps listed in this [guide](https://cyberscript77.github.io/wiki).
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
