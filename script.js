@@ -30,7 +30,7 @@ $(document).ready(function () {
                 $.getJSON("./datapacks/av-of-night-city/desc.json", function (D) {
                     console.log(D);
                 });
-        GitZip.zipRepo(selected_datapack);
+        GitZip.zipRepo(selected_datapack.replace("cyberscript77.github.io", "github.com/cyberscript77"));
     });
 });
 
