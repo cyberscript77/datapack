@@ -1,28 +1,23 @@
-var folder = "./datapacks/";
+var folder = "https://api.github.com/repos/cyberscript77/datapack/contents/datapacks"
+var raw_url = "https://raw.githubusercontent.com/cyberscript77/datapack/main/datapacks/";
 var first_featured = false;
 var feature_count = 2;
 var selected_datapack = "";
 $(document).ready(function () {
 
-    $.ajax({
-        url: folder,
-        success: function (data) {
-            $(data).find("a").attr("href", function (i, val) {
-                var datapack_desc_url = "datapacks" + val.replace("./", "/");
-                if ((!datapack_desc_url.includes("http-party") && datapack_desc_url != "datapacks/../") && UrlExists(datapack_desc_url + "desc.json")) {
-                    $.getJSON(datapack_desc_url + "desc.json", function (data) {
-                        if (data.featured && feature_count != 0) { feature_count--; }
-                        else if (data.featured && feature_count == 0) { data.featured = false; }
-
-                        document.getElementsByClassName(`${data.featured ? "featured-container" : "container"}`)[0].insertAdjacentHTML("beforeend",
-                            `<div class="card ${data.featured ? "featured" : ""} ${data.featured && first_featured ? "next" : ""}" onclick="openDatapack('${datapack_desc_url}');"><img src="${datapack_desc_url + "/thumbnail.jpg"}" />
+    $.getJSON(folder, async function (folders_list) {
+        for (i = 0; i < folders_list.length; i++) {
+            var folder_name = folders_list[i].name;
+            await $.getJSON(raw_url + "/" + folder_name + "/desc.json", function (data) {
+                if (data.featured && feature_count != 0) { feature_count--; }
+                else if (data.featured && feature_count == 0) { data.featured = false; }
+                document.getElementsByClassName(`${data.featured ? "featured-container" : "container"}`)[0].insertAdjacentHTML("beforeend",
+                    `<div class="card ${data.featured ? "featured" : ""} ${data.featured && first_featured ? "next" : ""}" onclick="openDatapack('${raw_url + "/" + folder_name}');"><img src="${raw_url + "/" + folder_name + "/thumbnail.jpg"}" />
                              <h2>${data.name}</h2>
                              <p>${data.desc}</p><br>
                              <p class="author">▣ Author: ${data.author}</p> ${data.branch == "beta" || data.branch == "alpha" ? `<div class="tag shimmer">${data.branch.capitalize()}</div>` : ""}
                              </div>`);
-                        if (data.featured == true) first_featured = true;
-                    });
-                }
+                if (data.featured == true) first_featured = true;
             });
         }
     });
@@ -38,12 +33,12 @@ $(document).ready(function () {
 
 function openDatapack(location) {
     selected_datapack = location;
-    $.getJSON(location + "desc.json", function (desc) {
+    $.getJSON(location + "/desc.json", function (desc) {
         // Set title
         document.getElementById("modal-title").innerHTML = desc.name;
         document.getElementById("info-name").innerHTML = desc.name;
         // Set image
-        document.getElementById("view-img-src").src = location + "thumbnail.jpg";
+        document.getElementById("view-img-src").src = location + "/thumbnail.jpg";
         // Set description
         document.getElementById("info-desc").innerHTML = desc.desc;
         // Set changelog
