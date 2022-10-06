@@ -50,6 +50,8 @@ function openDatapack(datapack_name) {
         } else {
             document.getElementById("info-changelog").innerHTML = "<br>&nbsp; No changelog found 🐱";
         }
+		//Set download link
+		 document.getElementById("download-datapack").href = "datapack/" + datapack_name + ".zip";
 
         // Get the modal
         var modal = document.getElementById("datapackModal");
