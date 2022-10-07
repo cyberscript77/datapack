@@ -25,7 +25,7 @@ $(document).ready(function () {
                     `<div class="card ${featured ? "featured" : ""} ${featured && i == 1 ? "next" : ""}" onclick="openDatapack('${datapack_name}', '${encodeURIComponent(JSON.stringify(data))}',);"><img src="${"meta/" + datapack_name + ".jpg"}" />
                              <h2>${data.name}</h2>
                              <p>${data.desc}</p><br>
-                             <p class="author">▣ Author: ${data.author}</p> ${data.branch == "beta" || data.branch == "alpha" ? `<div class="tag shimmer">${data.branch.capitalize()}</div>` : ""}
+                             <p class="author">▣ Author: ${data.author}</p> ${data.branch == "beta" || data.branch == "alpha" ? `<div class="tag">${data.branch.capitalize()}</div>` : ""}
                              </div>`);
             });
         }
@@ -69,7 +69,7 @@ function openDatapack(datapack_name, data) {
             <p class="changelog-body">${desc.changelog[i].desc.replaceAll("\n", "<br>")}</p>`);
         }
     } else {
-        document.getElementById("info-changelog").innerHTML = "<br>&nbsp; No changelog found 🐱";
+        document.getElementById("info-changelog").innerHTML = "<br>&nbsp; No changelog found 🐱<br><br>";
     }
 
     // Get the modal

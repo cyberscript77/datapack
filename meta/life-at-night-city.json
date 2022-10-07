@@ -1,0 +1,13 @@
+{
+    "name": "Life at Night City",
+    "desc": "Live the life at night city in your style!",
+    "author": "Eli",
+    "changelogs": "",
+    "file": "AV Of Night City.zip",
+    "tag": "AV Of Night City",
+    "version": "1.0.2",
+    "isdebug": false,
+	"branch":"beta",
+	"requirement": "1.1.2",
+	"flags":["cm_version:1.1.2"]
+}

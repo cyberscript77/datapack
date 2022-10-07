@@ -44,7 +44,7 @@ html {
 .card {
     border: solid white;
     border-width: 1.5px;
-    width: 400px;
+    max-width: 400px;
     overflow: hidden;
     height: 330px;
     margin: 15px;
@@ -118,7 +118,7 @@ html {
     color: black;
     border: 0px;
     background: linear-gradient(315deg, aqua 98%, transparent 5%);
-    width: 600px;
+    max-width: 600px;
     height: 400px;
     transition: transform 1s;
 }
@@ -275,4 +275,57 @@ html {
 
 .download-button:hover {
     background-color: #ffffff;
+}
+
+/* MOBILE COMPABILITY LAYOUT */
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .featured {
+        margin: 15px;
+    }
+
+    .modal-content {
+        height: 63%;
+    }
+
+    .large {
+        height: auto;
+    }
+
+    .datapack-tbody {
+        display: flex;
+    }
+
+    .datapack-tr {
+        margin-top: 60px;
+    }
+
+    .image-holder {
+        width: 100%;
+    }
+
+    .info-holder {
+        position: absolute;
+        margin-left: -30px;
+        width: 90%;
+        margin-top: 50px;
+    }
+
+    .change-log-scroll {
+        height: inherit;
+    }
+
+    .changelog-body {
+        max-height: 30px;
+    }
+
+    .download-button {
+        font-size: 14px;
+    }
+
+    .modal-content img {
+        width: 110%;
+        margin-left: -5%;
+    }
 }

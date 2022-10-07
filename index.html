@@ -1,8 +1,10 @@
 <html>
+
 <head>
     <link rel="stylesheet" href="./assets/css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
     <div class="header">
         <h2>Datapacks</h2>
@@ -21,8 +23,6 @@
         </div>
 
         <p class="featured-text">Featured</p>
-		
-		
 
         <div class="featured-container"></div>
 
@@ -35,22 +35,29 @@
                 <span class="close">&times;</span>
                 <h3 class="title" id="modal-title">Gang of Night City</h3>
                 <table style="width: 100%; height: 100%;">
-                    <td style="width: 60%;">
-                        <img id="view-img-src">
-                    </td>
-                    <td>
-                        <div class="info">
-                            <p class="title-info">▣ Info</p>
-                            <p id="info-name">Loading...</p>
-                            <p id="info-desc" style="width: 100%; color: rgb(171, 171, 171);">Loading..</p>
-                            Changelogs:<div id="info-changelog" class="change-log-scroll">
-                            </div>
-                            <div class="download-section">
-                                <button id="how-to-install-datapack" style="width: 55%;" class="download-button"><i class="fa-solid fa-book"></i> How to install ?</button>
-                                <button id="download-datapack" style="width: 41%;" class="download-button"><i class="fa-solid fa-download"></i> Download</button>
-                            </div>
-                        </div>
-                    </td>
+                    <tbody class="datapack-tbody">
+                        <tr class="datapack-tr">
+                            <td class="image-holder" style="width: 60%;">
+                                <img id="view-img-src">
+                            </td>
+                            <td class="info-holder">
+                                <div class="info">
+                                    <p class="title-info">▣ Info</p>
+                                    <p id="info-name">Loading...</p>
+                                    <p id="info-desc" style="width: 100%; color: rgb(171, 171, 171);">Loading..</p>
+                                    Changelogs:<div id="info-changelog" class="change-log-scroll">
+                                    </div>
+                                    <div class="download-section">
+                                        <button id="how-to-install-datapack" style="width: 55%;"
+                                            class="download-button"><i class="fa-solid fa-book"></i> How to install
+                                            ?</button>
+                                        <button id="download-datapack" style="width: 41%;" class="download-button"><i
+                                                class="fa-solid fa-download"></i> Download</button>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
                 </table>
             </div>
         </div>

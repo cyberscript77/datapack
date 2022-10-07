@@ -3,12 +3,11 @@
     "desc": "Get your own AV and drive around Night City in Style!",
     "author": "donk7413",
     "changelogs": "",
-    "featured": true,
     "file": "AV Of Night City.zip",
     "tag": "AV Of Night City",
     "version": "1.0.2",
     "isdebug": false,
-	"branch":"beta",
+	"branch":"alpha",
 	"requirement": "1.1.2",
 	"flags":["cm_version:1.1.2"]
 }
