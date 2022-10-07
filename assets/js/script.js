@@ -24,7 +24,7 @@ $(document).ready(function () {
                 document.getElementsByClassName(`${featured ? "featured-container" : "container"}`)[0].insertAdjacentHTML("beforeend",
                     `<div class="card ${featured ? "featured" : ""} ${featured && i == 1 ? "next" : ""}" onclick="openDatapack('${datapack_name}', '${encodeURIComponent(JSON.stringify(data))}',);"><img src="${"meta/" + datapack_name + ".jpg"}" />
                              <h2>${data.name}</h2>
-                             <p>${data.desc}</p><br>
+                             <p style="min-height:45px; max-height:45px; overflow: hidden;">${data.desc}</p><br>
                              <p class="author">▣ Author: ${data.author}</p> ${data.branch == "beta" || data.branch == "alpha" ? `<div class="tag">${data.branch.capitalize()}</div>` : ""}
                              </div>`);
             });
