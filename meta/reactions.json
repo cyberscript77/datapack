@@ -1,0 +1,11 @@
+{
+    "name": "Reactions",
+    "desc": "Base game NPCs react to you looking at them, but not directly at you.",
+    "author": "RedRock Studio",
+    "file": "reactions.zip",
+    "tag": "reactions",
+    "version": "1.2.2",
+    "isessential": false,
+	"branch":"beta"
+,"requirement":"1.0.14"
+	}

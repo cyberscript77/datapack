@@ -1,0 +1,12 @@
+{
+  "author": "RedRock Studio",
+  "branch": "beta",
+  "desc": "Be an Joytoy and enjoy an way of life full of desires",
+  "file": "JoyToy of Night City.zip",
+  "flags": [
+     "compile"
+  ],
+  "name": "JoyToy of Night City",
+  "tag": "JoyToy of Night City",
+  "version": "2.0.0"
+}
