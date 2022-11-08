@@ -6,6 +6,6 @@
     "tag": "Gangs of Night City",
     "version": "3.0.0",
     "isessential": false,
-	"branch":"beta",
+	"branch":"stable",
  "flags": ["compile"]
 }
