@@ -2,6 +2,6 @@
     "name": "The Life Of Night City",
     "desc": "Help Cops with Quota. Take a hit mission for corpo ladies. Experience a more mixed crowd. The City is Lively!",
     "author": "Eli",
-    "changelogs": "Added back in Interfaces to Join a gang with. NOTE: The UI layout will be bugged a bit til We update it.",
+    "changelog": "Added back in Interfaces to Join a gang with. NOTE: The UI layout will be bugged a bit til We update it.",
     "branch":"beta"
 }
