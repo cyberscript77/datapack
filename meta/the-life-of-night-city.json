@@ -4,8 +4,8 @@
     "author": "Eli",
     "changelog": [ 
             { 
-              "version": "2.0.1", 
-              "desc": "Added back in Interfaces to Join a gang with. NOTE: The UI layout will be bugged a bit til We update it."
+              "version": "2.0.4", 
+              "desc": "Added back in Interfaces to Join a gang with. NOTE: The UI layout will be bugged a bit til We update it.\\n Fixed desc.json"
             } 
     ],
     "branch":"beta"
