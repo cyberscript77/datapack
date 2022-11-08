@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Xanh%20Mono&display=swap');
 
 :root {
     color-scheme: dark;
@@ -225,7 +225,7 @@ html {
 }
 
 .change-log-scroll {
-    font-family: 'VT323', monospace;
+    font-family: 'Xanh Mono', monospace;
     margin-top: 10px;
     color: rgb(186, 186, 186);
     border: 0px;
