@@ -20,21 +20,45 @@ $(document).ready(function () {
             // Get name, description and image from meta folder.
             await $.getJSON("meta/" + datapack_name + ".json", function (data) {
 
+                // Splide list holder
+                var splide_list = `<li class="splide__slide"><img class="image_zoom" src = "${"meta/" + datapack_name + ".jpg"}"></li>`
+
+                // Splide init
+                if (data.slideshow && data.slideshow.length > 0) {
+                    for (j = 0; j < data.slideshow.length; j++) {
+                        splide_list += `<li class="splide__slide"><img class="image_zoom" src = "${"slideshow/" + datapack_name + "/" + data.slideshow[j]}"></li>`
+                    }
+                }
+
                 // Append elements to the DOM.
                 document.getElementsByClassName(`${featured ? "featured-container" : "container"}`)[0].insertAdjacentHTML("beforeend",
-                    `<div class="card ${featured ? "featured" : ""} ${featured && i == 1 ? "next" : ""}" onclick="openDatapack('${datapack_name}', '${encodeURIComponent(JSON.stringify(data))}',);"><img src="${"meta/" + datapack_name + ".jpg"}" />
-                             <h2>${data.name}</h2>
-                             <p style="min-height:45px; max-height:45px; overflow: hidden;">${data.desc}</p><br>
-                             <p class="author">▣ Author: ${data.author}</p> ${data.branch == "beta" || data.branch == "alpha" ? `<div class="tag">${data.branch.capitalize()}</div>` : ""}
-                             </div>`);
+                    //        `<div class="card ${featured ? "featured" : ""} ${featured && i == 1 ? "next" : ""}" onclick="openDatapack('${datapack_name}', '${encodeURIComponent(JSON.stringify(data))}',);"><img src="${"meta/" + datapack_name + ".jpg"}" />
+                    `<div class="card ${featured ? "featured" : ""} ${featured && i == 1 ? "next" : ""}" onclick="openDatapack('${datapack_name}', '${encodeURIComponent(JSON.stringify(data))}',);"> <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+                     <div class="splide__track"><ul class="splide__list">${splide_list}</ul></div></div>              
+                  
+                    <h2>${data.name}</h2>
+                    <p style="min-height:45px; max-height:45px; overflow: hidden;">${data.desc}</p><br>
+                    <p class="author">▣ Author: ${data.author}</p> ${data.branch == "beta" || data.branch == "alpha" ? `<div class="tag">${data.branch.capitalize()}</div>` : ""}
+                </div>`);
             });
+        }
+
+        // Splide
+        var elms = document.getElementsByClassName('splide');
+        for (var i = 0; i < elms.length; i++) {
+            new Splide(elms[i], {
+                pagination: false,
+                autoplay: true,
+                arrows: false,
+                rewind: true
+            }).mount();
         }
     });
 
     // Guide on how to install datapack (Will open new )
     document.getElementById("how-to-install-datapack").addEventListener('click', () => {
         // Open a new window (tab)
-        window.open("Still working on guide", '_blank');
+        alert("Installation documentation is in progress, Please look at the notice in the homepage");
     });
 
     // This listener will be called when download button is clicked.
@@ -57,10 +81,8 @@ function openDatapack(datapack_name, data) {
     // Set title
     document.getElementById("modal-title").innerHTML = desc.name;
     document.getElementById("info-name").innerHTML = desc.name;
-    // Set image
-    document.getElementById("view-img-src").src = "meta/" + datapack_name + ".jpg";
     // Set description
-    document.getElementById("info-desc").innerHTML = desc.desc;
+    document.getElementById("info-desc").innerHTML = desc.desc.replaceAll("\n", "<br>");
     // Set changelog
     document.getElementById("info-changelog").innerHTML = "";
     if (desc.changelog) {
@@ -71,6 +93,57 @@ function openDatapack(datapack_name, data) {
     } else {
         document.getElementById("info-changelog").innerHTML = "<br>&nbsp; No changelog found 🐱<br><br>";
     }
+
+    // Splide
+    var splide_list = `<li class="splide__slide"><img src = "${"meta/" + datapack_name + ".jpg"}"></li>`
+    var thumbnail_list = `<li class="thumbnail"><img src = "${"meta/" + datapack_name + ".jpg"}"></li>`
+    if (desc.slideshow && desc.slideshow.length > 0) {
+        for (j = 0; j < desc.slideshow.length; j++) {
+            splide_list += `<li class="splide__slide"><img src = "${"slideshow/" + datapack_name + "/" + desc.slideshow[j]}"></li>`
+            thumbnail_list += `<li class="thumbnail"><img src = "${"slideshow/" + datapack_name + "/" + desc.slideshow[j]}"></li>`
+        }
+    }
+
+    // Splide init
+    document.getElementById("datapack__image__list").innerHTML = splide_list;
+    document.getElementById("thumbnails").innerHTML = thumbnail_list;
+    var splide = new Splide('#datapack-carousel', {
+        pagination: false,
+        autoplay: true,
+        rewind: true
+    });
+
+    var thumbnails = document.getElementsByClassName('thumbnail');
+    var current;
+
+    // Splide thumbnail initialization
+    for (var i = 0; i < thumbnails.length; i++) {
+        initThumbnail(thumbnails[i], i);
+    }
+
+    // The function to initialize each thumbnail.
+    function initThumbnail(thumbnail, index) {
+        thumbnail.addEventListener('click', function () {
+            splide.go(index);
+        });
+    }
+    
+    splide.on( 'mounted move', function () {
+        var thumbnail = thumbnails[ splide.index ];
+      
+        if ( thumbnail ) {
+          if ( current ) {
+            current.classList.remove( 'is-active' );
+          }
+      
+          thumbnail.classList.add( 'is-active' );
+          current = thumbnail;
+        }
+      } );
+      
+      splide.mount();
+
+
 
     // Get the modal
     var modal = document.getElementById("datapackModal");
