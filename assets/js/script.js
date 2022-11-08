@@ -34,7 +34,7 @@ $(document).ready(function () {
     // Guide on how to install datapack (Will open new )
     document.getElementById("how-to-install-datapack").addEventListener('click', () => {
         // Open a new window (tab)
-        window.open("Still working on guide", '_blank');
+        window.open("https://cyberscript77.github.io/wiki/#/playing-with-cyberscript", '_blank');
     });
 
     // This listener will be called when download button is clicked.
