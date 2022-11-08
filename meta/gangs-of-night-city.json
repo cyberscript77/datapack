@@ -1,11 +1,12 @@
 {
-    "name": "Gangs of Night City",
-    "desc": "Gang Role Play system with Affinity affecting Attitudes, and affected by kills. RESET Affinity and go to any fixer you wanna be on and use your cycle interact key to use GNC s interact category at a fixer.",
-    "author": "RedRockStudio (Eli)",
-    "file": "Gangs of Night City.zip",
-    "tag": "Gangs of Night City",
-    "version": "3.0.0",
-    "isessential": false,
-	"branch":"stable",
-    "flags": ["compile"]
+	"name": "Gangs of Night City",
+	"desc": "Gang Role Play system with Affinity affecting Attitudes, and affected by kills. RESET Affinity and go to any fixer you wanna be on and use your cycle interact key to use GNC s interact category at a fixer.",
+	"author": "RedRockStudio (Eli)",
+	"changelog": [{
+		"version": "3.1.0",
+		"desc": "Fixed desc.json"
+	}],
+	"version": "3.1.0",
+	"branch": "beta",
+	"flags": ["compile"]
 }

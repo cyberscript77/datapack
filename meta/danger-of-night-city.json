@@ -2,10 +2,12 @@
     "name": "Dangers Of Night City",
     "desc": "An In-depth, and  Organic System that adds more random, and Dangerous events. All events, Dangerous or not, are made to feel natural to Night Citys Enviroment. Danger may finally, indeed, lurk around every corner.",
     "author": "RedRock Studio",
-    "file": "Dangers Of Night City.zip",
-    "tag": "Dangers Of Night City",
-    "version": "5.0.0",
-    "isessential": false,
-	"branch":"beta",
- "flags":[""]
+    "version": "5.1.0",
+	  "changelog": [ 
+            { 
+              "version": "5.1.0", 
+              "desc": "Fixed desc.json"
+            } 
+    ],
+	"branch":"beta"
 }
