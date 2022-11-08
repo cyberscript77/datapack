@@ -1,13 +1,11 @@
 {
-    "name": "Gang Of Night City",
-    "desc": "Get your own AV and drive around Night City in Style!",
-    "author": "donk7413",
-    "changelogs": "",
-    "file": "AV Of Night City.zip",
-    "tag": "AV Of Night City",
-    "version": "1.0.2",
-    "isdebug": false,
-	"branch":"alpha",
-	"requirement": "1.1.2",
-	"flags":["cm_version:1.1.2"]
+    "name": "Gangs of Night City",
+    "desc": "Gang Role Play system with Affinity affecting Attitudes, and affected by kills. RESET Affinity and go to any fixer you wanna be on and use your cycle interact key to use GNC s interact category at a fixer.",
+    "author": "RedRockStudio (Eli)",
+    "file": "Gangs of Night City.zip",
+    "tag": "Gangs of Night City",
+    "version": "3.0.0",
+    "isessential": false,
+	"branch":"stable",
+ "flags": ["compile"]
 }
