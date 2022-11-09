@@ -1,13 +1,11 @@
 {
-    "name": "The Life Of Night City",
-    "desc": "Help Cops with Quota. Take a hit mission for corpo ladies. Experience a more mixed crowd. The City is Lively!",
-    "author": "RedRockStudio (Eli, Drew, Donk)",
-    "slideshow": ["1.jpg", "2.jpg", "3.jpg", "4.jpg"],
-    "changelog": [ 
-            { 
-              "version": "2.1.1", 
-              "desc": "(Hotfix date 11-9-2022)\n Shortened the time frame for gang spawns from 8pm-Midnight.\n Fixed Radiant Bounty not triggering.\n If you Pressed the option for Everyone to hate V,\n All spawns, by crowd, will be scanner highlighted."
-            } 
-    ],
-    "branch":"beta"
+	"name": "The Life Of Night City",
+	"desc": "Help Cops with Quota. Take a hit mission for corpo ladies. Experience a more mixed crowd. The City is Lively!",
+	"author": "RedRockStudio (Eli, Drew, Donk)",
+	"slideshow": ["1.jpg", "2.jpg", "3.jpg", "4.jpg"],
+	"changelog": [{
+		"version": "2.1.1",
+		"desc": "(Hotfix date 11-9-2022)\n -Shortened the time frame for gang spawns from 8pm-Midnight.\n -Fixed Radiant Bounty not triggering.\n\n -If you Pressed the option for Everyone to hate V,\n All spawns, by crowd, will be scanner highlighted."
+	}],
+	"branch": "beta"
 }
