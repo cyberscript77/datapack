@@ -5,8 +5,8 @@
     "slideshow": ["1.jpg", "2.jpg", "3.jpg", "4.jpg"],
     "changelog": [ 
             { 
-              "version": "2.1.0", 
-              "desc": "Added back in Interfaces to Join a gang with. NOTE: The UI layout will be bugged a bit til We update it.\n Fixed desc.json\n Fixed join Gang\n Added Check for Variable: Affinity\n Key:District\n Set to 1\n (Hotfix date 11-8-2022)"
+              "version": "2.1.1", 
+              "desc": "(Hotfix date 11-9-2022)\n Shortened the time frame for gang spawns from 8pm-Midnight.\n Fixed Radiant Bounty not triggering.\n If you Pressed the option for Everyone to hate V,\n All spawns, by crowd, will be scanner highlighted."
             } 
     ],
     "branch":"beta"
