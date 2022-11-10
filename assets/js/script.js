@@ -91,6 +91,7 @@ function openDatapack(datapack_name, data) {
     document.getElementById("info-name").innerHTML = desc.name;
     // Set description
     document.getElementById("info-desc").innerHTML = desc.desc.replaceAll("\n", "<br>");
+	document.getElementById("info-desc2").innerHTML = desc.desc.replaceAll("\n", "<br>");
     // Set changelog
     document.getElementById("info-changelog").innerHTML = "";
 	document.getElementById("info-extra").innerHTML = "";
@@ -104,9 +105,7 @@ function openDatapack(datapack_name, data) {
     }
 	
 	if (desc.extranote) {
-        for (i = 0; i < desc.extranote.length; i++) {
-            document.getElementById("info-extra").insertAdjacentHTML("beforeend", ` <p class="extra-body">${desc.extranote.replaceAll("\n", "<br>")}</p>`);
-        }
+        document.getElementById("info-extra").insertAdjacentHTML("beforeend", ` <p class="extra-body">${desc.extranote.replaceAll("\n", "<br>")}</p>`);
     } else {
         document.getElementById("info-extra").innerHTML = "<br>&nbsp; No extra notes found 🐱<br><br>";
     }
