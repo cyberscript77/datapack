@@ -7,6 +7,6 @@
 		"version": "2.2.0",
 		"desc": "(Hotfix date 11-10-2022)\n -Fixed Bounty mission not finishing\n -Improved Crowd Activity, The walk paths are guided by your sight now.\n -Implemented the 'Psycho' Attitude.\n So now Everyone can fight EVERYONE."
 	}],
-	"extranote":"(Hotfix date 11-10-2022)\n -Fixed Bounty mission not finishing\n -Improved Crowd Activity, The walk paths are guided by your sight now.\n -Implemented the 'Psycho' Attitude.\n So now Everyone can fight EVERYONE.",
+	"extranote":"",
 	"branch": "beta"
 }
