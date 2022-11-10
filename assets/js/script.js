@@ -107,7 +107,7 @@ function openDatapack(datapack_name, data) {
 	if (desc.extranote) {
         document.getElementById("info-extra").insertAdjacentHTML("beforeend", ` <p class="extra-body">${desc.extranote.replaceAll("\n", "<br>")}</p>`);
     } else {
-        document.getElementById("info-extra").innerHTML = "<br>&nbsp; No extra notes found 🐱<br><br>";
+        document.getElementById("info-extra").innerHTML = "<br>&nbsp; No extra notes found 🤖<br><br>";
     }
 
     // Splide
