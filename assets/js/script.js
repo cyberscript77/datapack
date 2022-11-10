@@ -33,7 +33,7 @@ $(document).ready(function () {
                 // Append elements to the DOM.
                 document.getElementsByClassName(`${featured ? "featured-container" : "container"}`)[0].insertAdjacentHTML("beforeend",
                     //        `<div class="card ${featured ? "featured" : ""} ${featured && i == 1 ? "next" : ""}" onclick="openDatapack('${datapack_name}', '${encodeURIComponent(JSON.stringify(data))}',);"><img src="${"meta/" + datapack_name + ".jpg"}" />
-                    `<div class="card ${featured ? "featured" : ""} ${featured && i == 1 ? "next" : ""}" onclick="openDatapack('${datapack_name}', '${encodeURIComponent(JSON.stringify(data))}',);"> <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+                    `<div class="card ${featured ? "featured" : ""} ${featured && i == 1 ? "next" : ""}" onclick="openDatapack('${datapack_name}', '${encodeURIComponent(JSON.stringify(data)).replace(/'/g, "%27");',);"> <div class="splide" role="group" aria-label="Splide Basic HTML Example">
                      <div class="splide__track"><ul class="splide__list">${splide_list}</ul></div></div>              
                   
                     <h2>${data.name}</h2>
