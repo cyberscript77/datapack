@@ -99,7 +99,7 @@ function openDatapack(datapack_name, data) {
     var thumbnail_list = `<li class="thumbnail"><img width="120" height="70" src = "${"meta/" + datapack_name + ".jpg"}"></li>`
     if (desc.slideshow && desc.slideshow.length > 0) {
         for (j = 0; j < desc.slideshow.length; j++) {
-            splide_list += `<li class="splide__slide"><img width="120" height="70" src = "${"slideshow/" + datapack_name + "/" + desc.slideshow[j]}"></li>`
+            splide_list += `<li class="splide__slide"><img src = "${"slideshow/" + datapack_name + "/" + desc.slideshow[j]}"></li>`
             thumbnail_list += `<li class="thumbnail"><img width="120" height="70" src = "${"slideshow/" + datapack_name + "/" + desc.slideshow[j]}"></li>`
         }
     }
