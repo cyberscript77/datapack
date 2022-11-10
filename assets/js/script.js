@@ -91,7 +91,7 @@ function openDatapack(datapack_name, data) {
     document.getElementById("info-name").innerHTML = desc.name;
     // Set description
     document.getElementById("info-desc").innerHTML = desc.desc.replaceAll("\n", "<br>");
-	document.getElementById("info-desc2").innerHTML = "";
+	
     // Set changelog
     document.getElementById("info-changelog").innerHTML = "";
 	document.getElementById("info-extra").innerHTML = "";
