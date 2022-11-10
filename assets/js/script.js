@@ -4,6 +4,14 @@ var selected_datapack = "";
 // Start this when page loaded.
 $(document).ready(function () {
 
+
+	$(document).keydown(function(event) { 
+	  if (event.keyCode == 27) { 
+	    var modal = document.getElementById("datapackModal");
+	     modal.style.display = "none";
+        $('body').css("overflow", "auto");
+	  }
+	});
     // Start reading the registry.json
     $.getJSON("registry.json").then(async function (datapack_list) {
 
@@ -33,7 +41,7 @@ $(document).ready(function () {
                 // Append elements to the DOM.
                 document.getElementsByClassName(`${featured ? "featured-container" : "container"}`)[0].insertAdjacentHTML("beforeend",
                     //        `<div class="card ${featured ? "featured" : ""} ${featured && i == 1 ? "next" : ""}" onclick="openDatapack('${datapack_name}', '${encodeURIComponent(JSON.stringify(data))}',);"><img src="${"meta/" + datapack_name + ".jpg"}" />
-                    `<div class="card ${featured ? "featured" : ""} ${featured && i == 1 ? "next" : ""}" onclick="openDatapack('${datapack_name}', '${encodeURIComponent(JSON.stringify(data))}',);"> <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+                    `<div class="card ${featured ? "featured" : ""} ${featured && i == 1 ? "next" : ""}" onclick="openDatapack('${datapack_name}', '${encodeURIComponent(JSON.stringify(data)).replace(/'/g, "%27")}',);"> <div class="splide" role="group" aria-label="Splide Basic HTML Example">
                      <div class="splide__track"><ul class="splide__list">${splide_list}</ul></div></div>              
                   
                     <h2>${data.name}</h2>
@@ -83,8 +91,10 @@ function openDatapack(datapack_name, data) {
     document.getElementById("info-name").innerHTML = desc.name;
     // Set description
     document.getElementById("info-desc").innerHTML = desc.desc.replaceAll("\n", "<br>");
+	
     // Set changelog
     document.getElementById("info-changelog").innerHTML = "";
+	document.getElementById("info-extra").innerHTML = "";
     if (desc.changelog) {
         for (i = 0; i < desc.changelog.length; i++) {
             document.getElementById("info-changelog").insertAdjacentHTML("beforeend", ` <p class="changelog-title">Version ${desc.changelog[i].version}</p><p class="changelog-title-underline"></p>
@@ -93,14 +103,20 @@ function openDatapack(datapack_name, data) {
     } else {
         document.getElementById("info-changelog").innerHTML = "<br>&nbsp; No changelog found 🐱<br><br>";
     }
+	
+	if (desc.extranote) {
+        document.getElementById("info-extra").insertAdjacentHTML("beforeend", ` <p class="extra-body">${desc.extranote.replaceAll("\n", "<br>")}</p>`);
+    } else {
+        document.getElementById("info-extra").innerHTML = "<br>&nbsp; No extra notes found 🤖<br><br>";
+    }
 
     // Splide
     var splide_list = `<li class="splide__slide"><img src = "${"meta/" + datapack_name + ".jpg"}"></li>`
-    var thumbnail_list = `<li class="thumbnail"><img src = "${"meta/" + datapack_name + ".jpg"}"></li>`
+    var thumbnail_list = `<li class="thumbnail"><img width="120" height="70" src = "${"meta/" + datapack_name + ".jpg"}"></li>`
     if (desc.slideshow && desc.slideshow.length > 0) {
         for (j = 0; j < desc.slideshow.length; j++) {
             splide_list += `<li class="splide__slide"><img src = "${"slideshow/" + datapack_name + "/" + desc.slideshow[j]}"></li>`
-            thumbnail_list += `<li class="thumbnail"><img src = "${"slideshow/" + datapack_name + "/" + desc.slideshow[j]}"></li>`
+            thumbnail_list += `<li class="thumbnail"><img width="120" height="70" src = "${"slideshow/" + datapack_name + "/" + desc.slideshow[j]}"></li>`
         }
     }
 
