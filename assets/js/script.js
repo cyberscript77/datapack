@@ -4,6 +4,14 @@ var selected_datapack = "";
 // Start this when page loaded.
 $(document).ready(function () {
 
+
+	$(document).keydown(function(event) { 
+	  if (event.keyCode == 27) { 
+	    var modal = document.getElementById("datapackModal");
+	     modal.style.display = "none";
+        $('body').css("overflow", "auto");
+	  }
+	});
     // Start reading the registry.json
     $.getJSON("registry.json").then(async function (datapack_list) {
 
