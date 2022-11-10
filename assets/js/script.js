@@ -85,6 +85,7 @@ function openDatapack(datapack_name, data) {
     document.getElementById("info-desc").innerHTML = desc.desc.replaceAll("\n", "<br>");
     // Set changelog
     document.getElementById("info-changelog").innerHTML = "";
+	document.getElementById("info-extra").innerHTML = "";
     if (desc.changelog) {
         for (i = 0; i < desc.changelog.length; i++) {
             document.getElementById("info-changelog").insertAdjacentHTML("beforeend", ` <p class="changelog-title">Version ${desc.changelog[i].version}</p><p class="changelog-title-underline"></p>
@@ -92,6 +93,14 @@ function openDatapack(datapack_name, data) {
         }
     } else {
         document.getElementById("info-changelog").innerHTML = "<br>&nbsp; No changelog found 🐱<br><br>";
+    }
+	
+	if (desc.extranote) {
+        for (i = 0; i < desc.extranote.length; i++) {
+            document.getElementById("info-extra").insertAdjacentHTML("beforeend", ` <p class="extra-body">${desc.extranote.replaceAll("\n", "<br>")}</p>`);
+        }
+    } else {
+        document.getElementById("info-extra").innerHTML = "<br>&nbsp; No extra notes found 🐱<br><br>";
     }
 
     // Splide
