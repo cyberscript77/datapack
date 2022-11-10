@@ -4,8 +4,8 @@
 	"author": "RedRockStudio (Eli, Drew, Donk)",
 	"slideshow": ["1.jpg", "2.jpg", "3.jpg", "4.jpg"],
 	"changelog": [{
-		"version": "2.1.1",
-		"desc": "(Hotfix date 11-9-2022)\n -Shortened the time frame for gang spawns from 8pm-Midnight.\n -Fixed Radiant Bounty not triggering.\n\n -If you Pressed the option for Everyone to hate V,\n All spawns, by crowd, will be scanner highlighted."
+		"version": "2.2.0",
+		"desc": "(Hotfix date 11-10-2022)\n -Fixed Bounty mission not finishing\n -Improved Crowd Activity, The walk paths are guided by your sight now.\n -Implemented the 'Psycho' Attitude.\n So now Everyone can fight EVERYONE."
 	}],
 	"branch": "beta"
 }
