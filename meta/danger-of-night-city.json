@@ -5,9 +5,10 @@
 	 "slideshow": ["dnc1.png", "dnc2.png"],
 	  "changelog": [ 
             { 
-              "version": "5.1.3", 
-              "desc": "Hotfix date 11-10-2022)\n -Adjusted positions for gang fights. hope no wall spawns now.\n -Added some player banter after winning an encounter fight.\n\n -YOU NOW MUST BE IN A GANG TO GET AMBUSHED AT ALL!."
+              "version": "5.2.2", 
+              "desc": "Hotfix date 11-10-2022)\n -Adjusted Map-pin range for encounter events so you can stumble upon them a tad more consistent."
             } 
     ],
+	"extranote":"YOU NOW MUST BE IN A GANG TO SEE EVENTS!.",
 	"branch":"beta"
 }

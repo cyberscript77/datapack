@@ -4,9 +4,9 @@
 	"author": "RedRockStudio (Eli, Drew, Donk)",
 	"slideshow": ["1.jpg", "2.jpg", "3.jpg", "4.jpg"],
 	"changelog": [{
-		"version": "2.2.0",
-		"desc": "(Hotfix date 11-10-2022)\n -Fixed Bounty mission not finishing\n -Improved Crowd Activity, The walk paths are guided by your sight now.\n -Implemented the 'Psycho' Attitude.\n So now Everyone can fight EVERYONE."
+		"version": "2.3.0",
+		"desc": "(Hotfix date 11-10-2022)\n -Fixed Walk paths.\n\n Crowds now Walk in your eyesight range from 20m to 50m.\n\n Optimized and adjusted faction scripts.\n You can now buy a hotdog at a vendor.\n\n You may buy kungpao chicken from a Woman Vendor in Little China.\n\n Adjusted civilian behavior to be hostile, and pyscho for night time spawns."
 	}],
-	"extranote":"",
+	"extranote":"The Stacking of npcs, when they spawn in, is more apparent in Denser city areas, Due to the Prevention System sucking.",
 	"branch": "beta"
 }
