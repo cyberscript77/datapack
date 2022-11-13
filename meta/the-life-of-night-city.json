@@ -4,9 +4,9 @@
 	"author": "RedRockStudio (Eli, Drew, Donk)",
 	"slideshow": ["1.jpg", "2.jpg", "3.jpg", "4.jpg"],
 	"changelog": [{
-		"version": "2.3.0",
-		"desc": "(Hotfix date 11-10-2022)\n -Fixed Walk paths.\n\n Crowds now Walk in your eyesight range from 20m to 50m.\n\n Optimized and adjusted faction scripts.\n You can now buy a hotdog at a vendor.\n\n You may buy kungpao chicken from a Woman Vendor in Little China.\n\n Adjusted civilian behavior to be hostile, and pyscho for night time spawns."
+		"version": "2.4.0",
+		"desc": "(Hotfix date 11-13-2022)\n -Changed the Structure of Radiant Missions. They now act as a function, rather than a mission script.\n -Fixed Bounty and Escort radiants from being completed.\n -Fixed Quota Missions not being completeable.\n -Made Quota missions feel more like a mission "
 	}],
-	"extranote":"The Stacking of npcs, when they spawn in, is more apparent in Denser city areas, Due to the Prevention System sucking.",
+	"extranote": "YOU MUST COMPLETE THE VOODOOBOY ARC OF THE STORY TO SEE CROWDS AND DO RADIANT MISSIONS.",
 	"branch": "beta"
 }
