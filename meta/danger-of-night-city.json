@@ -4,9 +4,9 @@
 	"author": "RedRock Studio",
 	"slideshow": ["dnc1.png", "dnc2.png"],
 	"changelog": [{
-		"version": "5.3.0",
-		"desc": "Hotfix date 11-13-2022)\n -Further Adjustments for encounter events\n -Increased Chance to get a roaming Ally NPC, so you can ask them to be a companion.\n -Adjusted the behavior of Roaming Ally to better get to the player."
+		"version": "5.4.0",
+		"desc": "Hotfix date 11-18-2022)\n -....Fixed events not happening."
 	}],
-	"extranote": "-YOU NOW MUST BE IN A GANG TO SEE EVENTS! REFER THE THE DISCORD PIN IN GENERAL CHAT TO SEE HOW TO JOIN ONE!.\n -YOU MUST COMPLETE THE VOODOOBOY ARC OF THE STORY TO SEE CROWDS AND DO RADIANT MISSIONS.",
+	"extranote": "-YOU NOW MUST BE IN A GANG TO BE AMBUSHED or ENCOUNTER AN ALLY! REFER THE THE DISCORD PIN IN GENERAL CHAT TO SEE HOW TO JOIN ONE!.",
 	"branch": "beta"
 }

@@ -4,9 +4,9 @@
 	"author": "RedRockStudio (Eli, Drew, Donk)",
 	"slideshow": ["1.jpg", "2.jpg", "3.jpg", "4.jpg"],
 	"changelog": [{
-		"version": "2.6.0",
-		"desc": "(Hotfix date 11-13-2022)\n -Changed the Structure of Radiant Missions. They now act as a function, rather than a mission script.\n -Fixed Bounty and Escort radiants from being completed.\n -Fixed Quota Missions not being completeable.\n -Made Quota missions feel more like a mission "
+		"version": "2.7.0",
+		"desc": "(Hotfix date 11-18-2022)\n -Added Dynamic Rival Attitude (Honestly Can't tell if it works)\n -Made Escort Better. They are Friendly and Auto Sit in your car when you get inside it.\n -Scannerdata is more consistent on crowds."
 	}],
-	"extranote": "YOU MUST COMPLETE THE VOODOOBOY ARC OF THE STORY TO SEE CROWDS AND DO RADIANT MISSIONS.",
+	"extranote": "YOU MUST COMPLETE THE VOODOOBOY ARC OF THE STORY TO SEE CROWDS AND DO RADIANT MISSIONS.\n 'EVERYONE HATES V' is ON BY DEFAULT, This really affect your playthrough at all.",
 	"branch": "beta"
 }
