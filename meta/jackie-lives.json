@@ -1,0 +1,17 @@
+{
+    "name": "Jackie Lives !",
+    "desc": "Jackie spawns in as a companion to help you fight. MUST NOT HAVE THE HIEST DONE/ACTIVE BUT THE PICKUP DONE",
+    "author": "Eli",
+    "file": "jackie-lives.zip",
+    "tag": "jackie-lives",
+    "version": "1.0.0",
+    "isdebug": false,
+	"branch":"beta",
+	"requirement": "1.1.2",
+	"changelog": [{
+		"version": "1.0.0",
+		"desc": "Jackie spawns in as a companion to help you fight. MUST NOT HAVE THE HIEST DONE/ACTIVE BUT THE PICKUP DONE."
+	}],
+
+	"flags":["compile"]
+}
