@@ -1,28 +1,23 @@
-# CyberScript Datapacks
-&nbsp;
-![Logo](/assets/images/logo.png)
+# Danger of Night City
+Normal:
+ Always sets score to Normal when loading a save.
 
-This repository contains all the datapacks available for CyberScript made using CyberScript Engine.
+Hard:
+ Enemy spawn count from LNC and DNC get's a bit more chaotic,
+Reccommend to be using at least a 1080p-Performance exceeding PC for this.
 
-⚠️ Please read the steps completely and thoroughly to prevent any wrong steps which may affect your game.
-## Datapack Hub 
+Chaotic:
+ Even more than Hard mode spawn counts.
+HIGHLY Reccomend to be using at least a 1440p-ready PC for this.
 
-Visit our [Datapack Hub](https://cyberscript77.github.io/datapack) to download these datapacks quickly.
+Why?:
+Just. Why?
+Jumped the spawn counts pretty high.
+PLEASE be using at least a 1440p- Performance exceeding PC for this.
 
+Maximum Overdrive!:
+You're a Masochist for using this setting. Absurd spawn Counts and frequencies
+WILL Crash systems that can't go passed 1080p, Potentially.
+For the love of god, have a Beefy PC on this setting. 
 
-## Manual Download
-
-* Download or clone this repository
-* Extract the downloaded file using any archive extraction software 📦.
-* All the datapacks will be available inside `datapacks` folder.
-    
-## How to install
-
-Refer to the [📕wiki](https://cyberscript77.github.io/wiki) provided for cyberscript, which contains the steps involded in installing the datapacks.
-## Create your own
-
-To create your own datapacks, follow the steps listed in this [guide](https://cyberscript77.github.io/wiki).
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
- 
+ This setting increases Spawn Count and Variety on Events related to the player needing to defend themselves in.
