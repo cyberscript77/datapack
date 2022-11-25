@@ -68,6 +68,12 @@ $(document).ready(function () {
         // Open a new window (tab)
         alert("Installation documentation is in progress, Please look at the notice in the homepage");
     });
+	
+	document.getElementById("guide-datapack").addEventListener('click', () => {
+        // Open a new window (tab)
+		window.location.assign(`https://github.com/cyberscript77/datapack/blob/main/guide/${selected_datapack}.md`);
+      
+    });
 
     // This listener will be called when download button is clicked.
     document.getElementById("download-datapack").addEventListener('click', () => {
