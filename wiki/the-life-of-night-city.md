@@ -13,3 +13,17 @@ Crowds:
  -Want to bring justice on Corpo Creeps? Head to City Center, find a  Female worker, Do as before described above but it's 'Need a hit?' 
 
  -Hotdog and Asian Food Vendors have interact triggers to them as well. Same as the others, look at one, use your binding, select prompt.",
+ 
+ 
+ 
+ 
+ HOW AN ESCORT MISSION WORKS
+
+-Spawn and run from behind. Once 15m away from you, they ask for their favor. 
+
+-Picking accept, they become friendly attitude ( Cuz cdpr doesnt like civilian companions) . 
+
+-There is a wait_for_trigger action that needs you to be in a car,  so the npc auto sits in it.
+
+
+
