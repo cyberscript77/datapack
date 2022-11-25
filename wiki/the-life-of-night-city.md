@@ -1,28 +1,15 @@
-# CyberScript Datapacks
-&nbsp;
-![Logo](/assets/images/logo.png)
-
-This repository contains all the datapacks available for CyberScript made using CyberScript Engine.
-
-⚠️ Please read the steps completely and thoroughly to prevent any wrong steps which may affect your game.
-## Datapack Hub 
-
-Visit our [Datapack Hub](https://cyberscript77.github.io/datapack) to download these datapacks quickly.
+# The Life Of Night City
 
 
-## Manual Download
+Crowds:
+ On the Ambush timer, and depending on your Custom setting 'spawn cap' setting, a variety of new spawns are placed. 
+ These spots are typically near any type of service area. 
+ As the the day goes into night, more gang members walk amongst the crowds. 
 
-* Download or clone this repository
-* Extract the downloaded file using any archive extraction software 📦.
-* All the datapacks will be available inside `datapacks` folder.
-    
-## How to install
+ Activities: 
 
-Refer to the [📕wiki](https://cyberscript77.github.io/wiki) provided for cyberscript, which contains the steps involded in installing the datapacks.
-## Create your own
+ -Find a Cop, help them with their quota by looking at one and using  your 'Cycle Custom Interact' binding and select 'quota?' 
 
-To create your own datapacks, follow the steps listed in this [guide](https://cyberscript77.github.io/wiki).
-## License
+ -Want to bring justice on Corpo Creeps? Head to City Center, find a  Female worker, Do as before described above but it's 'Need a hit?' 
 
-[MIT](https://choosealicense.com/licenses/mit/)
- 
+ -Hotdog and Asian Food Vendors have interact triggers to them as well. Same as the others, look at one, use your binding, select prompt.",
