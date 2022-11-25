@@ -1,28 +1,26 @@
-# CyberScript Datapacks
-&nbsp;
-![Logo](/assets/images/logo.png)
+# Gangs of Night City
 
-This repository contains all the datapacks available for CyberScript made using CyberScript Engine.
+Rival Behavior: 
 
-⚠️ Please read the steps completely and thoroughly to prevent any wrong steps which may affect your game.
-## Datapack Hub 
+ Direct rivals from your newly joined gang will immediately be hostile to you, once spawned in and sighted.
 
-Visit our [Datapack Hub](https://cyberscript77.github.io/datapack) to download these datapacks quickly.
+ Gang Spawn Behavior: 
 
+ The more district points a gang holds, the more of them you see spawn in the city.
 
-## Manual Download
+ Additionally, Gangs that both control spots, at the same point triggers, can potentially spawn a fight between two rival members anywhere in the city. 
 
-* Download or clone this repository
-* Extract the downloaded file using any archive extraction software 📦.
-* All the datapacks will be available inside `datapacks` folder.
-    
-## How to install
+Affinity loss on kill: 
+ The more you kill a certain faction member, the more affinity you lose for that faction.
+ Get to the -99 threshold and bounty hunters from that gang will be sent after you.
 
-Refer to the [📕wiki](https://cyberscript77.github.io/wiki) provided for cyberscript, which contains the steps involded in installing the datapacks.
-## Create your own
+Spawns: 
+ THe way the GNC Spawns work is: 
 
-To create your own datapacks, follow the steps listed in this [guide](https://cyberscript77.github.io/wiki).
-## License
+ Spawn 
 
-[MIT](https://choosealicense.com/licenses/mit/)
- 
+ check your affiliation with their gang 
+
+ React to you either passive, or aggressive. 
+
+ Big brawl spawns are strictly at night between 10PM and 12am.
