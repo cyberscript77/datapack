@@ -1,28 +1,22 @@
-# CyberScript Datapacks
-&nbsp;
-![Logo](/assets/images/logo.png)
+# Joy toy of Night City
+Joy Toy Pink Ballad: 
 
-This repository contains all the datapacks available for CyberScript made using CyberScript Engine.
+ Go to Rita Mox bouncer, (if it's Radiant, Skip this little part and read from  'Client will spawn behind you'), Open up your Journal to accept the Joytoy Pink Ballad mission.
 
-⚠️ Please read the steps completely and thoroughly to prevent any wrong steps which may affect your game.
-## Datapack Hub 
+ A client will spawn behind you, towards the left, rotate to you.
 
-Visit our [Datapack Hub](https://cyberscript77.github.io/datapack) to download these datapacks quickly.
+ they will have a mark on their head and be highlighted.
 
+ a map point will be on the map. Track it manually.
 
-## Manual Download
+ Go to the destination with the client and it's easy from that point. 
 
-* Download or clone this repository
-* Extract the downloaded file using any archive extraction software 📦.
-* All the datapacks will be available inside `datapacks` folder.
-    
-## How to install
+ Dialog choices affect your rep: 
 
-Refer to the [📕wiki](https://cyberscript77.github.io/wiki) provided for cyberscript, which contains the steps involded in installing the datapacks.
-## Create your own
+ Depending if you say 'yes' or 'no' to certain things, your Dirtiness and Reputation will increase or decrease. 
 
-To create your own datapacks, follow the steps listed in this [guide](https://cyberscript77.github.io/wiki).
-## License
+ Rep Behavior: 
 
-[MIT](https://choosealicense.com/licenses/mit/)
- 
+ The more Dirty, less reputable you are, the dirtier and lower class clients n' spots you take.
+
+ Vise versa if you just had high rep only.
