@@ -26,4 +26,18 @@ Crowds:
 -There is a wait_for_trigger action that needs you to be in a car,  so the npc auto sits in it.
 
 
+JOINING A GANG. 
+-Have The life of Night City enabled, Have your Cycle custom interact key binded ( check wiki if you havent done it yet)
+
+-Go to a fixer of your choice, get in range of them ( it will label safe area)
+
+-Use your Cycle custom interact group key bind, Select "Join  Gang" . 
+
+-Das it.
+
+(ignore the -70 on scavs, i was severely negative with them. This is intended to be used as a Post Act 1 feature. )
+
+
+
+
 
