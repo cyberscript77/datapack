@@ -71,7 +71,7 @@ $(document).ready(function () {
 	
 	document.getElementById("guide-datapack").addEventListener('click', () => {
         // Open a new window (tab)
-		window.location.assign(`https://github.com/cyberscript77/datapack/blob/main/guide/${selected_datapack}.md`);
+		window.location.assign(`https://github.com/cyberscript77/datapack/blob/main/wiki/${selected_datapack}.md`);
       
     });
 
