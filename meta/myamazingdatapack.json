@@ -1,0 +1,10 @@
+{
+  "name": "my Amazing Datapack",
+  "desc": "All of the examples that are in the wiki guides ! and more !",
+  "author": "donk7413",
+  "changelog": [{
+		"version": "1.0.0",
+		"desc": "First Release"
+	}],
+	"extranote": "Here you can find all of examples of the guides for content creation that are written in the wiki guides. \n Please free to copy, edit or change for experiment the true power of CyberScript !",
+}
