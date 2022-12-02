@@ -1,7 +1,7 @@
 {
 	"name": "Dangers Of Night City",
 	"desc": "An In-depth, and  Organic System that adds more random, and Dangerous events. All events, Dangerous or not, are made to feel natural to Night Citys Enviroment. Danger may finally, indeed, lurk around every corner.",
-	"author": "RedRock Studio",
+	"author": "Eli",
 	"slideshow": ["dnc1.png", "dnc2.png"],
 	"changelog": [{
 		"version": "5.4.0",
