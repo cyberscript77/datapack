@@ -1,0 +1,32 @@
+{
+    "name": "init_xmas22",
+    "tag": "init_xmas22",
+	"way": "init",
+    "trigger": {
+        "trigger01": {
+			"name": "check_variable",
+			"variable": "xmas",
+			"key":"doed",
+			"operator":"nothing"
+		},
+    },
+    "requirement": [
+        [
+            "trigger01"
+        ]
+    ],
+    "action": [
+		
+		{
+		"name": "set_variable",
+		"variable": "xmas",
+		"key": "doed",
+		"value": 0,
+		},
+		{
+		"name": "consolelog",
+		
+		"value": "XMAS INIT",
+		},
+    ]
+}

@@ -1,0 +1,208 @@
+{
+    "name": "run_xmas22",
+    "tag": "run_xmas22",
+	"way": "world",
+    "trigger": {
+        "condition":  {
+			"name": "check_variable",
+			"variable": "xmas",
+			"key":"doed",
+			"value": 0
+		},
+		"place": {
+			"name": "custom_place",
+			"value": "worldlife_v_apart",
+			"helper": "This trigger will be triggered when you are at an specific custom place",
+			"helperTitle": "House : in specific Custom Place"
+		},
+		"testdate":
+		{
+			"name": "testFor",
+			"triggers": [
+					
+					{
+						"name": "os_date",
+						"day": 24,
+						"month": 12,
+						"year": 2022
+					},
+					{
+						"name": "os_date",
+						"day": 25,
+						"month": 12,
+						"year": 2022
+					},
+					{
+						"name": "os_date",
+						"day": 26,
+						"month": 12,
+						"year": 2022
+					},
+					{
+						"name": "os_date",
+						"day": 27,
+						"month": 12,
+						"year": 2022
+					},
+					{
+						"name": "os_date",
+						"day": 28,
+						"month": 12,
+						"year": 2022
+					},
+					{
+						"name": "os_date",
+						"day": 29,
+						"month": 12,
+						"year": 2022
+					},
+					{
+						"name": "os_date",
+						"day": 30,
+						"month": 12,
+						"year": 2022
+					},
+					{
+						"name": "os_date",
+						"day": 31,
+						"month": 12,
+						"year": 2022
+					},
+					{
+						"name": "os_date",
+						"day": 01,
+						"month": 01,
+						"year": 2023
+					},
+					{
+						"name": "os_date",
+						"day": 02,
+						"month": 01,
+						"year": 2023
+					},
+					{
+						"name": "os_date",
+						"day": 03,
+						"month": 01,
+						"year": 2023
+					},
+					{
+						"name": "os_date",
+						"day": 04,
+						"month": 01,
+						"year": 2023
+					},
+					{
+						"name": "os_date",
+						"day": 05,
+						"month": 01,
+						"year": 2023
+					}
+			],
+			"logic": "or",
+			"helper": "This trigger will be triggered when all of the trigger are triggered by the logic you choose.",
+			"helperTitle": "Logic : Test For"
+		},
+		
+    },
+    "requirement": [
+        [
+            "condition","place","testdate"
+        ]
+    ],
+    "action": [
+		{
+		"name": "change_custom_condition",
+		"value": "run_xmas21",
+		"score": 1,
+		"helper": "This action will change the value of an custom score",
+		"helperTitle": "Score :  change the value of an custom score"
+		},
+		{
+			"name": "subtitle",
+			"title": "Already too much times passed since we start this journey..",
+			"type": 1,
+			"target": "player",
+			"speaker": "Johnny",
+			"duration": 3,
+			"helper": "This action will fire an subtitle, it act live wait for second",
+			"helperTitle": "Dialog : run an subtitle"
+		},
+		{
+			"name": "subtitle",
+			"title": "Yeah and I feel like things are going to move.",
+			"type": 1,
+			"target": "player",
+			"speaker": "V",
+			"duration": 3,
+			"helper": "This action will fire an subtitle, it act live wait for second",
+			"helperTitle": "Dialog : run an subtitle"
+		},
+		{
+			"name": "subtitle",
+			"title": "Merry fuckin' Christmas, V",
+			"type": 1,
+			"target": "player",
+			"speaker": "Johnny",
+			"duration": 3,
+			"helper": "This action will fire an subtitle, it act live wait for second",
+			"helperTitle": "Dialog : run an subtitle"
+		},
+		{
+			"name": "subtitle",
+			"title": "Merry Christmas, Johnny",
+			"type": 1,
+			"target": "player",
+			"speaker": "V",
+			"duration": 3,
+			"helper": "This action will fire an subtitle, it act live wait for second",
+			"helperTitle": "Dialog : run an subtitle"
+		},
+		{
+			"name": "subtitle",
+			"title": "I have a old piece of hidden data in my mind which has just been decrypted. I'll read it to you.",
+			"type": 1,
+			"target": "player",
+			"speaker": "Johnny",
+			"duration": 3,
+			"helper": "This action will fire an subtitle, it act live wait for second",
+			"helperTitle": "Dialog : run an subtitle"
+		},
+		{
+			"name": "subtitle",
+			"title": " 'From all CyberScript team, Merry Christmas and happy new year 2023! '",
+			"type": 1,
+			"target": "player",
+			"speaker": "Johnny",
+			"duration": 3,
+			"helper": "This action will fire an subtitle, it act live wait for second",
+			"helperTitle": "Dialog : run an subtitle"
+		},
+		{
+			"name": "subtitle",
+			"title": "2023 ? Who are these old assholes? Nevermind. Back to work.",
+			"type": 1,
+			"target": "player",
+			"speaker": "Johnny",
+			"duration": 3,
+			"helper": "This action will fire an subtitle, it act live wait for second",
+			"helperTitle": "Dialog : run an subtitle"
+		},
+		
+		{
+			"name": "simple_message",
+			"value": "Merry Christmas and Happy New 2023 !",
+			"helper": "This action will make display an in game message",
+			"helperTitle": "UI : Message"
+		},
+		{
+		"name": "set_variable",
+		"variable": "xmas",
+		"key": "doed",
+		"value": 1,
+		"helper": "This action will change the value of an custom score",
+		"helperTitle": "Score :  change the value of an custom score"
+		},
+		
+    ]
+}
