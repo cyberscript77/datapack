@@ -1,0 +1,12 @@
+{
+    "name": "Transports Of Night City",
+    "desc": "Want to get a ride in Night City ? Without driving ? Or go to a place quickly ? Call Delamain Service and you will be always right in time !",
+    "author": "RedRockStudio (donk7413)",
+    "slideshow": ["taxi01.jpg", "taxi02.jpg"],
+	"changelog": [{
+		"version": "1.0.0",
+		"desc": "First release"
+	}],
+	"extranote": "Enable the datapack and call 'CS : Delamain Service' in your contact list.",
+	"branch": "beta"
+}
