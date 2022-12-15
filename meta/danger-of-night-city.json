@@ -4,8 +4,8 @@
 	"author": "Eli",
 	"slideshow": ["dnc1.png", "dnc2.png"],
 	"changelog": [{
-		"version": "5.4.0",
-		"desc": "Hotfix date 11-18-2022)\n -....Fixed events not happening."
+		"version": "6.0.0",
+		"desc": "Hotfix date 12-15-2022)\n -Fixed events not happening. Again.\n\n-Maxtac event removed due to CTD.\n\nImproved various functions to work with the Spawn Multiplier setting.\n\nAll events have been fine tuned."
 	}],
 	"extranote": "-YOU NOW MUST BE IN A GANG TO BE AMBUSHED or ENCOUNTER AN ALLY! REFER THE THE DISCORD PIN IN GENERAL CHAT TO SEE HOW TO JOIN ONE!.",
 	"branch": "beta"
