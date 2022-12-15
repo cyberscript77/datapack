@@ -4,8 +4,8 @@
     "author": "RedRockStudio (donk7413)",
     "slideshow": ["taxi01.jpg", "taxi02.jpg"],
 	"changelog": [{
-		"version": "1.0.0",
-		"desc": "First release"
+		"version": "1.0.1",
+		"desc": "1.0.1 \n -remove useless dataterm interact"
 	}],
 	"extranote": "Enable the datapack and call 'CS : Delamain Service' in your contact list.",
 	"branch": "beta"
