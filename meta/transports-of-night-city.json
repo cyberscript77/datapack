@@ -4,8 +4,8 @@
     "author": "RedRockStudio (donk7413)",
     "slideshow": ["taxi01.jpg", "taxi02.jpg"],
 	"changelog": [{
-		"version": "1.0.2",
-		"desc": "1.0.2 \n -Added AV engine sound when using AV"
+		"version": "1.0.3",
+		"desc": "1.0.3 \n -Added an option for call delamain Support (when car is bugged)"
 	}],
 	"extranote": "Enable the datapack and call 'CS : Delamain Service' in your contact list.",
 	"branch": "beta"
