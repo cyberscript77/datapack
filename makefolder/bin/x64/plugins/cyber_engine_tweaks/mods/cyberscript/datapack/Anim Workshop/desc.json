@@ -1,0 +1,9 @@
+{
+  "name": "Anim Workshop",
+  "desc": "This is where the fun begins",
+  "author": "donk7413 & Eli",
+  "file": "Anim Workshop.zip",
+  "tag": "Anim Workshop",
+  "version": "1.0.0",
+  "flags":["compile"]
+}

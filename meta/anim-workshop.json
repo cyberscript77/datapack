@@ -1,0 +1,10 @@
+{
+  "name": "Anim Workshop",
+  "desc": "This is where the fun begins",
+  "author": "donk7413 & Eli",
+  "changelog": [{
+		"version": "1.0.0",
+		"desc": "First release"
+	}],
+	"extranote": "-YOU NOW MUST HAVE CYBERSCRIPT ANIMATIONS ARCHIVE AND CYBERSCRIPT 2.0+.",
+}

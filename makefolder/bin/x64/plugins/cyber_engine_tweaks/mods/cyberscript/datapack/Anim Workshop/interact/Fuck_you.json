@@ -1,0 +1,48 @@
+{
+	"name": "Fuck You !",
+	"tag": "barsittest",
+	"display": "event_interact",
+	"timer": 0,
+	"sorttag": "",
+	"icon": "SitIcon",
+	"style": {
+		"textcolor": {
+			"red": 183,
+			"green": 110,
+			"blue": 121
+		}
+
+	},
+	"trigger": {
+		"condition01": {
+			"name": "auto"
+		}
+	},
+	"requirement": [
+		[
+			"condition01"
+		]
+	],
+	"action": [{
+			"name": "play_custom_anim_entity",
+			"tag": "player",
+			"ent": "base\\cyberscript\\entity\\workspot_anim.ent",
+			"anim": "stand__2h_on_sides__01__lh_fuck_you__01",
+			"workspot": "cyberscript_workspot_base",
+			"isinstant": false,
+			"unlockcamera": true
+		},
+		{
+			"name": "clean_all_loaded_interact"
+		},
+		{
+			"name": "wait_second",
+			"value": 1.5
+		},
+		{
+			"name": "stop_anim_entity",
+			"helper": "This action will force load and display an interact without check requirements",
+			"tag": "player"
+		}
+	]
+}

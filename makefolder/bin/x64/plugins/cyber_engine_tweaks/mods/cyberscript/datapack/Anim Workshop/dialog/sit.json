@@ -1,0 +1,246 @@
+[{
+		"Desc": "Floor",
+		"speaker": {
+			"value": "Floor",
+			"way": "speak"
+		},
+		"Tag": "test_sit_d",
+		"trigger": {},
+		"requirement": [],
+		"options": [{
+				"Description": "[Look for me]",
+				"icon": "GunSuicideIcon",
+				"action": [{
+						"name": "register_entity_you_look_at",
+						"tag": "test01",
+						"group": "",
+						"helper": "This action will register the looked entity",
+						"helperTitle": "Entity : Register a looked entity"
+					},
+					{
+						"name": "spawn_camera",
+						"tag": "mycamera",
+						"surveillance": false,
+						"position": "relative_to_entity",
+						"position_helper": "at||relative_to_entity||node||player_look_at||poi||mappin||fasttravel||custom_place||custom_room",
+						"position_change_helper": "Write 'current' in position_tag for get current node,mappin, fasttravel, custom_place or custom_room. \n For poi if you write 'current' in position_poi_district you will get the current district, \n if you write 'current in position_poi_subdistrict you will get the current subdistrict. \n also if you write 'random' in position_poi_subdistrict or position_poi_district, you will get an 'random' value",
+						"position_range": 50,
+						"position_lookatdistance": 0,
+						"position_tag": "player",
+						"position_tag_helper": "judy01||playerhouse01||playerhouse_bed||",
+						"position_way": "normal",
+						"position_way_helper": "normal||behind||forward",
+						"position_poi_district": "",
+						"position_poi_subdistrict": "",
+						"position_poi_is_for_car": false,
+						"position_poi_from_position": false,
+						"position_poi_from_position_x": 0,
+						"position_poi_from_position_y": 0,
+						"position_poi_from_position_z": 0,
+						"position_poi_use_location_tag": false,
+						"position_poi_type": 1,
+						"position_distance": 5,
+						"position_house_way": "default",
+						"position_house_way_helper": "default||enter||exit",
+						"position_house_tag": "playerhouse01",
+						"position_node_usegameplay": false,
+						"x": 0,
+						"y": 0,
+						"z": 0,
+
+						"yaw": 0,
+						"pitch": 0,
+						"roll": 0,
+
+						"helper": "This action will spawn an camera object (type can be free or entity, entity will bound the camera to an entity current position and angle, coord become relative to it)",
+						"helperTitle": "UI : Spawn Camera"
+					},
+					{
+						"name": "subscribe_actionlist_to_direct_action",
+						"tag": "camera_refresh",
+						"action": [{
+							"name": "move_camera",
+							"tag": "mycamera",
+							"position": "at",
+							"position_helper": "at||relative_to_entity||node||player_look_at||poi||mappin||fasttravel||custom_place||custom_room",
+							"position_change_helper": "Write 'current' in position_tag for get current node,mappin, fasttravel, custom_place or custom_room. \n For poi if you write 'current' in position_poi_district you will get the current district, \n if you write 'current in position_poi_subdistrict you will get the current subdistrict. \n also if you write 'random' in position_poi_subdistrict or position_poi_district, you will get an 'random' value",
+							"position_range": 50,
+							"position_lookatdistance": 0,
+							"position_tag": "test01",
+							"position_tag_helper": "judy01||playerhouse01||playerhouse_bed||",
+							"position_way": "normal",
+							"position_way_helper": "normal||behind||forward",
+							"position_poi_district": "",
+							"position_poi_subdistrict": "",
+							"position_poi_is_for_car": false,
+							"position_poi_from_position": false,
+							"position_poi_from_position_x": 0,
+							"position_poi_from_position_y": 0,
+							"position_poi_from_position_z": 0,
+							"position_poi_use_location_tag": false,
+							"position_poi_type": 1,
+							"position_distance": 5,
+							"position_house_way": "default",
+							"position_house_way_helper": "default||enter||exit",
+							"position_house_tag": "playerhouse01",
+							"position_node_usegameplay": false,
+							"x": 0,
+							"y": 0,
+							"z": 2,
+
+
+							"yaw": 0,
+							"pitch": 0,
+							"roll": 0,
+
+							"context": [{
+								"trigger": {
+									"auto": {
+										"name": "auto"
+									}
+								},
+								"requirement": [
+									["auto"]
+								],
+								"prop": {
+									"yaw": {
+										"text": "##gangname-179",
+										"type": "number",
+										"values": {
+											"gangname": {
+												"type": "entity",
+												"tag": "test01",
+												"key": "head_orientation",
+												"prop": "yaw"
+											}
+										}
+									},
+									"pitch": {
+										"text": "-1*##gangname",
+										"type": "number",
+										"values": {
+											"gangname": {
+												"type": "entity",
+												"tag": "test01",
+												"key": "head_orientation",
+												"prop": "pitch"
+											}
+										}
+									},
+									"roll": {
+										"text": "##gangname+90",
+										"type": "number",
+										"values": {
+											"gangname": {
+												"type": "entity",
+												"tag": "test01",
+												"key": "head_orientation",
+												"prop": "roll"
+											}
+										}
+									},
+									"x": {
+										"text": "##gangname",
+										"type": "number",
+										"values": {
+											"gangname": {
+												"type": "entity",
+												"tag": "test01",
+												"key": "head_position",
+												"prop": "x"
+											}
+										}
+									},
+									"y": {
+										"text": "##gangname",
+										"type": "number",
+										"values": {
+											"gangname": {
+												"type": "entity",
+												"tag": "test01",
+												"key": "head_position",
+												"prop": "y"
+											}
+										}
+									},
+									"z": {
+										"text": "##gangname-0.005",
+										"type": "number",
+										"values": {
+											"gangname": {
+												"type": "entity",
+												"tag": "test01",
+												"key": "head_position",
+												"prop": "z"
+											}
+										}
+									}
+								}
+							}],
+
+							"helper": "This action will move an camera object (type can be free or entity, entity will bound the camera to an entity current position and angle, coord become relative to it)",
+							"helperTitle": "UI : Move Camera"
+						}]
+					},
+					{
+						"name": "activate_camera",
+						"tag": "mycamera",
+
+						"helper": "This action will move an camera object (type can be free or entity, entity will bound the camera to an entity current position and angle)",
+						"helperTitle": "UI : Active Camera"
+					}
+
+				],
+				"trigger": {
+					"auto": {
+						"name": "auto"
+					}
+				},
+				"requirement": [
+					["auto"]
+				]
+			},
+			{
+				"Description": "[Test Camera Stop]",
+				"icon": "GunSuicideIcon",
+				"action": [
+					{
+						"name": "stop_camera",
+						"tag": "mycamera",
+
+						"helper": "This action will delete an camera object ",
+						"helperTitle": "UI : Delete Camera"
+					},
+					{
+						"name": "unsubscribe_from_direct_action",
+						"tag": "camera_refresh"
+					},
+					{
+						"name": "despawn_entity",
+						"tag": "mycamera",
+
+						"helper": "This action will delete an camera object ",
+						"helperTitle": "UI : Delete Camera"
+					},
+					{
+						"name": "unregister_entity",
+						"tag": "test01",
+
+						"helper": "This action will delete an camera object ",
+						"helperTitle": "UI : Delete Camera"
+					}
+
+				],
+				"trigger": {
+					"auto": {
+						"name": "auto"
+					}
+				},
+				"requirement": [
+					["auto"]
+				]
+			}
+		]
+	}
+
+]

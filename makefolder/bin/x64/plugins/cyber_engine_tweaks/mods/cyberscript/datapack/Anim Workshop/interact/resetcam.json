@@ -1,0 +1,38 @@
+{
+	"name": "Reset Camera",
+	"tag": "reset_cammerr",
+	"display": "event_interact",
+	"timer": 0,
+	"sorttag": "",
+	"icon": "SitIcon",
+	"style": {
+		"textcolor": {
+			"red": 183,
+			"green": 110,
+			"blue": 121
+		},
+		"iconcolor": {
+			"red": 255,
+			"green": 0,
+			"blue": 0
+		}
+	},
+	"trigger": {
+		"condition01": {
+			"name": "auto"
+		}
+	},
+	"requirement": [
+		[
+			"condition01"
+		]
+	],
+	"action": [{
+			"name": "stop_camera",
+			"tag": "mycamera"
+	}, {
+		"name": "unregister_entity",
+		"tag": "possessed"
+		}
+	]
+}

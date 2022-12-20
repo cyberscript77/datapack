@@ -1,0 +1,87 @@
+{
+	"name": "sit bench",
+	"tag": "sit_on_bench",
+	"display": "event_interact",
+	"timer": 0,
+	"sorttag": "",
+	"icon": "SitIcon",
+	"style": {
+		"textcolor": {
+			"red": 183,
+			"green": 110,
+			"blue": 121
+		},
+		"iconcolor": {
+			"red": 255,
+			"green": 0,
+			"blue": 0
+		}
+	},
+	"trigger": {
+		"condition01": {
+			"name": "auto"
+		}
+	},
+	"requirement": [
+		[
+			"condition01"
+		]
+	],
+	"action": [{
+			"name": "teleport",
+			"tag": "player",
+			"group": false,
+			"position": "relative_to_entity",
+			"position_helper": "at||relative_to_entity||node||player_look_at||poi||mappin||fasttravel||custom_place||custom_room",
+			"position_change_helper": "Write 'current' in position_tag for get current node,mappin, fasttravel, custom_place or custom_room. \n For poi if you write 'current' in position_poi_district you will get the current district, \n if you write 'current in position_poi_subdistrict you will get the current subdistrict. \n also if you write 'random' in position_poi_subdistrict or position_poi_district, you will get an 'random' value",
+			"position_range": 50,
+			"position_lookatdistance": 0,
+			"position_tag": "player",
+			"position_tag_helper": "judy01||playerhouse01||playerhouse_bed||",
+			"position_way": "behind",
+			"position_way_helper": "normal||behind||forward",
+			"position_poi_district": "",
+			"position_poi_subdistrict": "",
+			"position_poi_is_for_car": false,
+			"position_poi_from_position": false,
+			"position_poi_from_position_x": 0,
+			"position_poi_from_position_y": 0,
+			"position_poi_from_position_z": 0,
+			"position_poi_use_location_tag": false,
+			"position_poi_type": 1,
+			"position_distance": 0.50,
+			"position_house_way": "default",
+			"position_house_way_helper": "default||enter||exit",
+			"position_house_tag": "playerhouse01",
+			"position_node_usegameplay": false,
+			"x": 0,
+			"y": 0,
+			"z": -0.10
+		}, {
+			"name": "play_custom_anim_entity",
+			"tag": "player",
+			"ent": "base\\cyberscript\\entity\\workspot_anim.ent",
+			"anim": "sit_couch_lean180__rh_on_couch__01",
+			"workspot": "cyberscript_workspot_base",
+			"isinstant": false,
+			"unlockcamera": true,
+			"angle": {
+				"yaw": -180,
+				"roll": 2,
+				"pitch": 2
+			}
+		},
+		{
+			"name": "clean_all_loaded_interact"
+		},
+		{
+			"name": "wait_second",
+			"value": 3
+		},
+		{
+			"name": "load_interact",
+			"helper": "This action will force load and display an interact without check requirements",
+			"tag": "reset_player"
+		}
+	]
+}

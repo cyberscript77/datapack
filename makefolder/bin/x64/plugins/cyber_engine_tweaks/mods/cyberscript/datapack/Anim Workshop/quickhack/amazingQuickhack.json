@@ -1,0 +1,293 @@
+{
+	"tag": "TestPpos",
+	"icon": "UIIcon.quickhack_icebreaker",
+	"title": "Possession",
+	"titlealternative": "",
+	"description": "Possession",
+	"trigger": {
+		"auto": {
+			"name": "auto"
+		}
+
+	},
+	"requirement": [
+		["auto"]
+	],
+	"inactiveReason": "My inactive reasons",
+	"unlocktrigger": {
+		"auto": {
+			"name": "auto"
+		}
+
+	},
+	"unlockrequirement": [
+		["auto"]
+	],
+	"actiontype": 5,
+	"cost": 3,
+	"uploadtime": 2,
+	"duration": 10,
+	"icelevelvisible": true,
+	"iceLevel": 13,
+	"quality": 1,
+	"isinstant": false,
+	"cooldown": 0,
+	"networkbreached": true,
+	"action": [{
+	"name": "register_entity_you_look_at",
+						"tag": "possessed",
+						"group": "",
+						"helper": "This action will register the looked entity",
+						"helperTitle": "Entity : Register a looked entity"
+					},
+					{
+						"name": "spawn_camera",
+						"tag": "mycamera",
+						"surveillance": false,
+						"position": "relative_to_entity",
+						"position_helper": "at||relative_to_entity||node||player_look_at||poi||mappin||fasttravel||custom_place||custom_room",
+						"position_change_helper": "Write 'current' in position_tag for get current node,mappin, fasttravel, custom_place or custom_room. \n For poi if you write 'current' in position_poi_district you will get the current district, \n if you write 'current in position_poi_subdistrict you will get the current subdistrict. \n also if you write 'random' in position_poi_subdistrict or position_poi_district, you will get an 'random' value",
+						"position_range": 50,
+						"position_lookatdistance": 0,
+						"position_tag": "player",
+						"position_tag_helper": "judy01||playerhouse01||playerhouse_bed||",
+						"position_way": "normal",
+						"position_way_helper": "normal||behind||forward",
+						"position_poi_district": "",
+						"position_poi_subdistrict": "",
+						"position_poi_is_for_car": false,
+						"position_poi_from_position": false,
+						"position_poi_from_position_x": 0,
+						"position_poi_from_position_y": 0,
+						"position_poi_from_position_z": 0,
+						"position_poi_use_location_tag": false,
+						"position_poi_type": 1,
+						"position_distance": 5,
+						"position_house_way": "default",
+						"position_house_way_helper": "default||enter||exit",
+						"position_house_tag": "playerhouse01",
+						"position_node_usegameplay": false,
+						"x": 0,
+						"y": 0,
+						"z": 0,
+
+						"yaw": 0,
+						"pitch": 0,
+						"roll": 0,
+
+						"helper": "This action will spawn an camera object (type can be free or entity, entity will bound the camera to an entity current position and angle, coord become relative to it)",
+						"helperTitle": "UI : Spawn Camera"
+					},
+					{
+						"name": "subscribe_actionlist_to_direct_action",
+						"tag": "camera_refresh",
+						"action": [{
+							"name": "move_camera",
+							"tag": "mycamera",
+							"position": "at",
+							"position_helper": "at||relative_to_entity||node||player_look_at||poi||mappin||fasttravel||custom_place||custom_room",
+							"position_change_helper": "Write 'current' in position_tag for get current node,mappin, fasttravel, custom_place or custom_room. \n For poi if you write 'current' in position_poi_district you will get the current district, \n if you write 'current in position_poi_subdistrict you will get the current subdistrict. \n also if you write 'random' in position_poi_subdistrict or position_poi_district, you will get an 'random' value",
+							"position_range": 50,
+							"position_lookatdistance": 0,
+							"position_tag": "possessed",
+							"position_tag_helper": "judy01||playerhouse01||playerhouse_bed||",
+							"position_way": "normal",
+							"position_way_helper": "normal||behind||forward",
+							"position_poi_district": "",
+							"position_poi_subdistrict": "",
+							"position_poi_is_for_car": false,
+							"position_poi_from_position": false,
+							"position_poi_from_position_x": 0,
+							"position_poi_from_position_y": 0,
+							"position_poi_from_position_z": 0,
+							"position_poi_use_location_tag": false,
+							"position_poi_type": 1,
+							"position_distance": 5,
+							"position_house_way": "default",
+							"position_house_way_helper": "default||enter||exit",
+							"position_house_tag": "playerhouse01",
+							"position_node_usegameplay": false,
+							"x": 0,
+							"y": 0,
+							"z": 2,
+							"yaw": 0,
+							"pitch": 0,
+							"roll": 0,
+
+							"context": [{
+								"trigger": {
+									"auto": {
+										"name": "auto"
+									}
+								},
+								"requirement": [
+									["auto"]
+								],
+								"prop": {
+									"yaw": {
+										"text": "##gangname-179",
+										"type": "number",
+										"values": {
+											"gangname": {
+												"type": "entity",
+												"tag": "possessed",
+												"key": "head_orientation",
+												"prop": "yaw"
+											}
+										}
+									},
+									"pitch": {
+										"text": "-1*##gangname",
+										"type": "number",
+										"values": {
+											"gangname": {
+												"type": "entity",
+												"tag": "possessed",
+												"key": "head_orientation",
+												"prop": "pitch"
+											}
+										}
+									},
+									"roll": {
+										"text": "##gangname+90",
+										"type": "number",
+										"values": {
+											"gangname": {
+												"type": "entity",
+												"tag": "possessed",
+												"key": "head_orientation",
+												"prop": "roll"
+											}
+										}
+									},
+									"x": {
+										"text": "##gangname",
+										"type": "number",
+										"values": {
+											"gangname": {
+												"type": "entity",
+												"tag": "possessed",
+												"key": "head_position",
+												"prop": "x"
+											}
+										}
+									},
+									"y": {
+										"text": "##gangname",
+										"type": "number",
+										"values": {
+											"gangname": {
+												"type": "entity",
+												"tag": "possessed",
+												"key": "head_position",
+												"prop": "y"
+											}
+										}
+									},
+									"z": {
+										"text": "##gangname-0.005",
+										"type": "number",
+										"values": {
+											"gangname": {
+												"type": "entity",
+												"tag": "possessed",
+												"key": "head_position",
+												"prop": "z"
+											}
+										}
+									}
+								}
+							}],
+
+							"helper": "This action will move an camera object (type can be free or entity, entity will bound the camera to an entity current position and angle, coord become relative to it)",
+							"helperTitle": "UI : Move Camera"
+						}]
+					},
+					{
+						"name": "activate_camera",
+						"tag": "mycamera",
+
+						"helper": "This action will move an camera object (type can be free or entity, entity will bound the camera to an entity current position and angle)",
+						"helperTitle": "UI : Active Camera"
+	}, {
+		"name": "apply_effect",
+		"tag": "possessed",
+		"value": "GameplayRestriction.NoCombat"
+	}, {
+		"name": "wait_second",
+		"value": 2
+	}, {
+		"name": "attitude_entity_against_entity",
+		"tag": "possessed",
+		"entity": "player",
+		"attitude": "companion"
+	}, {
+		"name": "move",
+		"tag": "possessed",
+		"group": false,
+		"move": "Run",
+		"position": "relative_to_entity",
+		"position_helper": "at||relative_to_entity||node||player_look_at||poi||mappin||fasttravel||custom_place||custom_room",
+		"position_change_helper": "Write 'current' in position_tag for get current node,mappin, fasttravel, custom_place or custom_room. \n For poi if you write 'current' in position_poi_district you will get the current district, \n if you write 'current in position_poi_subdistrict you will get the current subdistrict. \n also if you write 'random' in position_poi_subdistrict or position_poi_district, you will get an 'random' value",
+		"position_range": 50,
+		"position_lookatdistance": 0,
+		"position_tag": "player",
+		"position_tag_helper": "judy01||playerhouse01||playerhouse_bed||",
+		"position_way": "forward",
+		"position_way_helper": "normal||behind||forward",
+		"position_poi_district": "",
+		"position_poi_subdistrict": "",
+		"position_poi_is_for_car": false,
+		"position_poi_from_position": false,
+		"position_poi_use_location_tag": false,
+		"position_poi_type": 1,
+		"position_distance": 5,
+		"position_house_way": "default",
+		"position_house_way_helper": "default||enter||exit",
+		"position_house_tag": "playerhouse01",
+		"position_node_usegameplay": false,
+		"x": 0,
+		"y": 0,
+		"z": 0,
+		"moveV2": true,
+		"roll": 0,
+		"pitch": 0,
+		"yaw": 0,
+		"distance": 0,
+		"distancetolerance": 0,
+		"ignorenavigation": true,
+		"stoponobstacle": false,
+		"outofway": false
+	}, {
+		"name": "wait_for_trigger",
+		"trigger": {
+			"name": "entity_at_relative_player_position",
+			"x": 0,
+			"y": 0,
+			"z": 0,
+			"range": 10,
+			"tag": "possessed"
+		}
+		}, {
+		
+		"name": "attitude_entity_against_entity",
+		"tag": "possessed",
+		"entity": "player",
+		"attitude": "passive"
+	}, {
+		"name": "stop_camera",
+		"tag": "mycamera"
+		}, {
+		"name": "wait_for_trigger",
+		"trigger": {
+			"name": "killed_entity",
+			"tag": "possessed"
+		}
+		}, {
+		"name": "wait_second",
+		"value": 2
+		}, {
+			"name": "despawn_entity",
+			"tag": "possessed"
+	}]
+}

@@ -1,0 +1,38 @@
+{
+	"name": "Reset Stance",
+	"tag": "reset_player",
+	"display": "event_interact",
+	"timer": 0,
+	"sorttag": "",
+	"icon": "SitIcon",
+	"style": {
+		"textcolor": {
+			"red": 183,
+			"green": 110,
+			"blue": 121
+		},
+		"iconcolor": {
+			"red": 255,
+			"green": 0,
+			"blue": 0
+		}
+	},
+	"trigger": {
+		"condition01": {
+			"name": "auto"
+		}
+	},
+	"requirement": [
+		[
+			"condition01"
+		]
+	],
+	"action": [{
+			"name": "stop_anim_entity",
+			"tag": "player"
+	}, {
+		"name": "unload_interact",
+		"tag": "reset_player"
+		}
+	]
+}
