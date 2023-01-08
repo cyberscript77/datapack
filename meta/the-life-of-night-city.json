@@ -4,8 +4,8 @@
 	"author": "Eli",
 	"slideshow": ["1.jpg", "2.jpg", "3.jpg", "4.jpg"],
 	"changelog": [{
-		"version": "3.0.0",
-		"desc": "(Hotfix date 12-15-2022 -Eli \n\n- Improved crowd spawn and walk behavior, They now spawn behind you then walk to where your screen is looking. look at the npc to move em more.\n - ADDED New maxtac bount hunt, just 4 units can attack you now.\n - ADDED Two new Quickhacks to the NETWATCH NETDRIVER MK.5 (Ket-a-death, Pose!)\n - Changed some settings to be Toggles.\n - Changed the way Quota activity and encounter activity are, you go to the point, they will spawn behind you now instead of potentially being there stuck in walls."
+		"version": "3.1.0",
+		"desc": "(Hotfix date 1-8-2023 -Eli \n\n- Further Improved Spawn behavior in crowd function."
 	}],
 	"extranote": "YOU MUST COMPLETE THE VOODOOBOY ARC OF THE STORY TO SEE CROWDS AND DO RADIANT MISSIONS.\n 'EVERYONE HATES V' is ON BY DEFAULT, This really Doesn't affect your playthrough at all.",
 	"branch": "beta"
